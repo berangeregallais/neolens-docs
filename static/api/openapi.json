@@ -1,0 +1,75 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Neolens API",
+    "version": "1.0.0",
+    "description": "Fictional API for intelligent medical image analysis. For documentation demo purposes only."
+  },
+  "paths": {
+    "/analyze": {
+      "post": {
+        "summary": "Analyze a medical image",
+        "description": "Uploads a DICOM or PNG medical image and returns AI-generated analysis results.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "image": {
+                    "type": "string",
+                    "format": "binary",
+                    "description": "Medical image file (DICOM, PNG, JPG)"
+                  },
+                  "confidenceThreshold": {
+                    "type": "number",
+                    "format": "float",
+                    "default": 0.8,
+                    "description": "Minimum confidence score to return a result"
+                  }
+                },
+                "required": ["image"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Analysis results returned successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "timestamp": "2025-07-22T14:30:00Z",
+                  "patientId": "P-123456",
+                  "findings": [
+                    {
+                      "label": "Pulmonary Nodule",
+                      "confidence": 0.92,
+                      "location": "left upper lobe",
+                      "priority": "high"
+                    },
+                    {
+                      "label": "Pleural Effusion",
+                      "confidence": 0.81,
+                      "location": "right lung base",
+                      "priority": "medium"
+                    }
+                  ],
+                  "recommendation": "Suggest CT follow-up within 7 days.",
+                  "modelVersion": "v3.2.1"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  }
+}
