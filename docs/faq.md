@@ -31,7 +31,7 @@ If your AI outputs vary between similar inputs, check the following:
 - Check the model version and parameters used in each request  
 - Avoid using images outside of the model's training distribution (e.g., pediatric scans on an adult model)  
 
-For advanced control, review the **AI Parameters** section and use the `seed` field to make inference deterministic.
+For advanced control, review the [AI Configuration](./ai-insights/configuring-ai) section and use the `seed` field to make inference deterministic.
 
 ---
 
@@ -42,7 +42,7 @@ If your requests exceed the allowed rate per minute or hour, you will receive a 
 - Retry after the `Retry-After` header delay  
 - Contact support to discuss custom rate limits for your account  
 
-Rate limit details are available in the **Rate Limiting** section.
+Rate limit details are available in the [Rate Limiting](./getting-started/rate-limiting) section.
 
 ---
 

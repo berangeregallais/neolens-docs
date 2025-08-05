@@ -111,9 +111,9 @@ fetch("https://api.neolens.ai/v1/analyze", {
 
 ### 🔗 Helpful Links
 
-- [Authentication & API Keys](../1-getting-started/authentication)
-- [Rate Limiting](../1-getting-started/rate-limiting)
-- [Error Handling](../2-api-reference/error-handling)
+- [Authentication & API Keys](../getting-started/authentication)
+- [Rate Limiting](../getting-started/rate-limiting)
+- [Error Handling](./error-handling)
 
 ---
 

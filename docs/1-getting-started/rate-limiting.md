@@ -104,4 +104,4 @@ In the healthcare domain, rate limiting plays a critical role in:
 - Complying with GDPR and healthcare data privacy regulations
 - Ensuring fair and auditable access across different roles and institutions
 
-Need a higher rate limit? [Get in touch with our support team →](mailto:support@neolens.ai) or refer to your SLA.
+Need a higher rate limit? Contact our support team or refer to your SLA.

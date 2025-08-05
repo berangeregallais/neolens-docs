@@ -46,12 +46,12 @@ Once logged in, navigate to **Settings > API Keys** and create a key with approp
 
 #### 3. Choose your integration path
 
-| Use Case                    | Recommended Tool              | Documentation                    |
-|-----------------------------|-------------------------------|----------------------------------|
-| Backend devs (Node, Python) | REST API / SDK                | [API Reference](./api/endpoints) |
-| No-code / Quick tests       | Web UI                        | [Web Interface](./web-interface) |
-| Research / Jupyter users    | Python SDK (in progress)      | Coming soon                      |
-| Bulk upload / automation    | REST API + CLI (soon)         | [Quickstart](./quickstart)       |
+| Use Case                    | Recommended Tool              | Documentation                               |
+|-----------------------------|-------------------------------|---------------------------------------------|
+| Backend devs (Node, Python) | REST API / SDK                | [API Reference](../api-reference/endpoints) |
+| No-code / Quick tests       | Web UI                        | [Try Interactive API](../api-interactive)   |
+| Research / Jupyter users    | Python SDK (in progress)      | Coming soon                                 |
+| Bulk upload / automation    | REST API + CLI (soon)         | [Quickstart](./quickstart)                  |
 
 ---
 
@@ -76,7 +76,7 @@ Each analysis uses a specific model (e.g. anomaly-detection, segmentation, biome
 Default models are preselected, but you can override via API parameter:
 "model_id": "segmentation-v3"
 
-See [Model Parameters](./ai-models/configuration) for tuning options.
+See [AI Configuration](../ai-insights/configuring-ai) for tuning options. for tuning options.
 
 ---
 
@@ -88,7 +88,7 @@ Results are returned as:
 - Overlay visualization: see results on DICOM viewer or dashboard.
 - Report preview (HTML/PDF): auto-generated clinical summary.
 
-➡️ [Learn to interpret results](./ai-models/interpretation)
+➡️ [Learn to interpret results](../ai-insights/interpreting-results)
 
 ---
 
@@ -105,11 +105,12 @@ Results are returned as:
 
 - 📄 [Quickstart](./quickstart)
 - 🔐 [Authentication](./authentication)
-- 📚 [Full API Reference](./api/endpoints)
-- 🤖 [AI Concepts](./ai-models/concepts)
-- 🧠 [Prompt Engineering](./ai-models/prompting)
-- 💬 [Troubleshooting](./troubleshooting)
-- ❓ [FAQ](./faq)
+- 📚 [Full API Reference](../api-reference/endpoints)
+- 🤖 [AI Concepts](../ai-insights/ai-concepts)
+- 🔧 [AI Configuration](../ai-insights/configuring-ai)
+- 🔍 [Interpreting Results](../ai-insights/interpreting-results)
+- 💬 [API Troubleshooting](../api-reference/api-troubleshooting)
+- ❓ [FAQ](../faq)
 
 ---
 

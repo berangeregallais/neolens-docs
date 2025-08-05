@@ -68,7 +68,7 @@ If you receive a `429 Too Many Requests` response:
 
 - Check your current request frequency.
 - Implement exponential backoff or retry strategies.
-- Refer to the Rate Limiting section for thresholds.
+- Refer to the [Rate Limiting](../getting-started/rate-limiting) section for thresholds.
 
 ---
 

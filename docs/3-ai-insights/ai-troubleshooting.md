@@ -51,7 +51,7 @@ Here are some typical API errors you may encounter:
 |-------------|--------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------|
 | 400         | Bad Request                    | `{"error":"Missing required field: image"}`  | Check input format and required fields.                                                 |
 | 401         | Unauthorized                   | `{"error":"Invalid API key"}`                | Verify your API credentials.                                                            |
-| 429         | Too Many Requests              | `{"error":"Rate limit exceeded"}`            | Wait or adjust frequency. See [FAQ](../faq.md#what-happens-if-i-exceed-the-rate-limit). |
+| 429         | Too Many Requests              | `{"error":"Rate limit exceeded"}`            | Wait or adjust frequency. See See [Rate Limiting](../../getting-started/rate-limiting). |
 | 500         | Internal Server Error          | `{"error":"Unexpected server failure"}`      | Retry later. Contact support if persistent.                                             |
 
 > 💡 **Where to find the request ID?**  
