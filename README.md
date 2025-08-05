@@ -1,5 +1,10 @@
 # 🧠 Neolens API Documentation
 
+![Deploy to GitHub Pages](https://github.com/berangeregallais/neolens-docs/actions/workflows/deploy.yml/badge.svg)
+`Build Status`
+[![View Documentation](https://img.shields.io/badge/View%20Documentation-Online-blue)](https://berangeregallais.github.io/neolens-docs/)
+![Fictional Project](https://img.shields.io/badge/Fictional_Project-Portfolio_Purpose-grey)
+
 **⚠️ This project is entirely fictional. Any reproduction, distribution, or reuse of its content is strictly prohibited.**
 
 ## Overview
