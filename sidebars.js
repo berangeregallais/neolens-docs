@@ -21,6 +21,7 @@ const sidebars = {
       type: 'category',
       label: 'Getting Started',
       items: [
+        '1-getting-started/getting-started',
         '1-getting-started/quickstart',
         '1-getting-started/authentication',
         '1-getting-started/rate-limiting',
@@ -59,6 +60,7 @@ const sidebars = {
         '3-ai-insights/best-practices',
         '3-ai-insights/ai-limitations',
         '3-ai-insights/ai-troubleshooting',
+        '3-ai-insights/ai-act-conformity',
       ],
     },
     {
@@ -93,6 +95,11 @@ const sidebars = {
       type: 'doc',
       id: 'glossary',
       label: 'Glossary',
+    },
+    {
+      type: 'doc',
+      id: 'changelog',
+      label: 'Changelog',
     },
   ],
 };

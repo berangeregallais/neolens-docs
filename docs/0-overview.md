@@ -14,14 +14,27 @@ Neolens is a high-performance medical imaging analysis API leveraging advanced A
 - **Developers & Data Scientists:** Utilize a fully documented OpenAPI specification supporting multipart image uploads, customizable inference parameters, and real-time results streaming.  
 - **Researchers & AI Engineers:** Explore model architecture details, uncertainty quantification methods, and algorithmic limitations documented transparently for reproducibility and ethical deployment.
 
+### Neolens Processing Pipeline
+
+The image below summarizes how Neolens processes input medical images through each functional module.
+
+![Neolens AI Pipeline](/img/neolens-pipeline.png)
+
+<small style={{ display: "block", color: "#888", marginTop: "0.5rem" }}>
+This illustration is for demonstrative purposes and may not reflect real medical workflows.
+</small>
+
 ### Core functionalities
 
-- **Anomaly Detection & Localization:** Employ convolutional neural networks (CNNs) for pixel-level segmentation and detection of lesions, nodules, and other pathologies.  
-- **Pathology Prioritization:** Apply hierarchical classification algorithms to rank findings by clinical urgency, optimizing triage processes.  
-- **Automated Anatomical Measurement:** Extract precise metrics (e.g., lesion size, volume) using geometric and morphological analysis pipelines.  
-- **Longitudinal Analysis:** Perform comparative studies across timepoints, leveraging image registration and temporal modeling.  
-- **Preliminary Report Generation:** Generate structured, NLP-powered summaries compatible with clinical documentation standards.  
-- **Diagnostic Confidence Scores:** Provide calibrated confidence intervals and uncertainty estimates based on Bayesian deep learning techniques.
+Neolens provides modular capabilities that can be used independently or in combination:
+
+- 📍 **Detection**: Identify regions of interest or abnormalities in medical images  
+- 🧠 **Classification**: Categorize detected findings using clinically relevant labels  
+- 📏 **Measurement**: Compute anatomical distances, volumes, or angles with precision  
+- 📝 **Report Generation**: Automatically generate structured reports from results  
+- 🔒 **Traceability**: Store, audit, and retrieve prediction history for legal safety  
+
+Each module includes clear endpoints, parameter configuration options, and interpretation guidance.
 
 ### Compliance and integration
 
@@ -35,3 +48,12 @@ Neolens is engineered for the regulated healthcare environment:
 ---
 
 Dive into the documentation to explore API endpoints, configuration parameters, data formats, and best practices for deploying Neolens in production environments.
+
+:::tip[⚖️ AI Act Compliance (Annex IV)]
+This documentation **partially complies with Annex IV of the European Union’s AI Act**, which outlines the mandatory technical documentation for high-risk AI systems.  
+It has been structured to **demonstrate best practices** in transparency, interpretability, and risk management, within the scope of a **fictional portfolio project**.
+
+This is not a legally binding document, but an **illustration of how technical writers and documentation engineers can contribute** to trustworthy AI by aligning with regulatory expectations.
+
+→ See the dedicated page: [Conformity with AI Act Annex IV](../ai-insights/ai-act-conformity.md)
+:::

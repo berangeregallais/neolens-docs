@@ -13,14 +13,14 @@ Neolens API uses standard HTTP status codes to indicate the success or failure o
 
 | Status Code | Meaning                 | Description                                    |
 |-------------|-------------------------|------------------------------------------------|
-| 200         | OK                      | Request succeeded                               |
+| 200         | OK                      | Request succeeded                              |
 | 400         | Bad Request             | Invalid parameters or malformed request        |
-| 401         | Unauthorized            | Missing or invalid authentication token       |
+| 401         | Unauthorized            | Missing or invalid authentication token        |
 | 403         | Forbidden               | Insufficient permissions or scope              |
-| 404         | Not Found               | Resource does not exist                          |
+| 404         | Not Found               | Resource does not exist                        |
 | 409         | Conflict                | Conflict with current state (e.g., duplicate)  |
-| 429         | Too Many Requests       | Rate limit exceeded                             |
-| 500         | Internal Server Error   | Unexpected error on the server                  |
+| 429         | Too Many Requests       | Rate limit exceeded                            |
+| 500         | Internal Server Error   | Unexpected error on the server                 |
 
 ---
 
