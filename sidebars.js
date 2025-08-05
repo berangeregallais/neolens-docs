@@ -47,6 +47,7 @@ const sidebars = {
         '2-api-reference/error-handling',
         '2-api-reference/sdks-examples',
         '2-api-reference/api-troubleshooting',
+        '2-api-reference/performance-metrics',
       ],
     },
     {

@@ -1,41 +1,75 @@
-# Website
+# 🧠 Neolens API Documentation
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+**⚠️ This project is entirely fictional. Any reproduction, distribution, or reuse of its content is strictly prohibited.**
 
-## Installation
+## Overview
 
-```bash
-yarn
-```
+This repository contains the full technical documentation of **Neolens**, a fictional medical imaging AI API. The documentation was designed as part of a professional portfolio to demonstrate advanced technical writing and documentation engineering skills.
 
-## Local Development
+It includes:
 
-```bash
-yarn start
-```
+- A complete developer and product documentation
+- An interactive API reference section
+- Medical AI concepts explained (classification, detection, compliance, etc.)
+- Use cases, limitations, and ethical considerations
+- Multi-language API call examples
+- UX-optimized layout with visuals and accessibility considerations
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+> 🛠️ Built with [Docusaurus](https://docusaurus.io/) and deployed automatically via GitHub Actions.
 
-## Build
+## 📚 Live Documentation
 
-```bash
-yarn build
-```
+👉 [View the live Neolens API documentation here](https://berangeregallais.github.io/neolens-doc/)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## 🏗️ Tech Stack
 
-## Deployment
+- Documentation: Docusaurus 3.x
+- CI/CD: GitHub Actions
+- Hosting: GitHub Pages
 
-Using SSH:
+## 🚀 Deploy Locally
 
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
+To run the documentation locally:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm install
+npm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## 🔁 Deployment (CI/CD)
+
+This project uses a GitHub Actions workflow to automatically build and deploy the documentation to GitHub Pages on each push to the `master` branch.
+
+📄 Workflow file: .github/workflows/deploy.yml
+
+Ensure your repository has Pages configured to deploy from the `gh-pages` branch.
+
+## 🧩 Structure
+
+```text
+├── docs/                # Markdown docs
+├── static/              # Images and diagrams
+├── src/                 # Custom components and styling
+├── docusaurus.config.js # Configuration
+├── sidebars.js          # Sidebar navigation
+├── README.md            # This file
+└── ...
+```
+
+## ⚠️ Disclaimer
+
+This is a fictional project created solely for demonstrative and educational purposes.
+It does not represent a real product or API.
+
+All rights reserved © Bérangère Gallais – 2025
+Any reproduction, redistribution, or use of this content – even partial – is prohibited without express authorization.
+
+## 📬 Contact
+
+Feel free to reach out for collaboration, freelance opportunities, or to discuss documentation strategy:
+
+**Bérangère Gallais**
+Freelance Documentation Architect & Technical Writer  
+Helping tech & AI companies build world-class docs and developer experiences  
+📧 <gallaisberangere@gmail.com>  
+🌐 [LinkedIn](https://www.linkedin.com/in/berangeregallais/)
