@@ -21,7 +21,7 @@ This module flags potential abnormalities to support radiologists in prioritizin
 - Applies **convolutional neural networks (CNNs)** trained on labeled datasets.
 - Outputs bounding boxes and heatmaps highlighting areas of interest.
 
-![Detection pipeline overview](/img/pipeline.png)
+![Detection pipeline overview](/img/neolens-pipeline.png)
 
 ---
 

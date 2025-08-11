@@ -740,17 +740,13 @@ cerner_powerChart:
 
 ### Documentation Links
 
-- [DICOM Conformance Statement](./dicom-conformance.pdf)
-- [HL7 Implementation Guide](./hl7-implementation.md)  
-- [FHIR API Documentation](./fhir-api-guide.md)
-- [Security Architecture](./security-architecture.md)
+- **DICOM Conformance Statement** (Available on request)
+- **HL7 Implementation Guide** (Coming soon)
 
 ### Training Materials
 
-- [Administrator Setup Guide](./admin-setup-guide.pdf)
-- [Clinical User Training](./clinical-training.pptx)
-- [IT Support Procedures](./it-support-procedures.md)
-- [Troubleshooting Playbook](./troubleshooting-playbook.md)
+- **Administrator Setup Guide** (Available on request)
+- **Clinical User Training** (Available on request)
 
 ### Professional Services
 
@@ -770,12 +766,3 @@ cerner_powerChart:
 - **Continuous monitoring**: Track metrics and optimize based on real-world usage
 
 :::
-
----
-
-## 🔗 Related Documentation
-
-- [Export Formats](./export-formats)
-- [API Authentication](../getting-started/authentication)
-- [Compliance and Ethics](../compliance/ethics)
-- [AI Troubleshooting](../ai-insights/ai-troubleshooting)

@@ -1,7 +1,7 @@
 ---
-id: getting-started
+slug: getting-started
 title: Getting Started
-description: Learn how to start using Neolens with your preferred workflow: API, SDK, or web interface.
+description: "Learn how to start using Neolens with your preferred workflow: API, SDK, or web interface."
 ---
 
 ## Getting Started

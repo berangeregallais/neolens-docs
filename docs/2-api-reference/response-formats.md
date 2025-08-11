@@ -84,9 +84,9 @@ Some endpoints support alternative formats, which you can request using the Acce
 
 | Format | MIME Type          | Notes                                     |
 | ------ | ------------------ | ----------------------------------------- |
-| JSON   | `application/json` | Default, structured and readable          |
-| CSV    | `text/csv`         | Suitable for bulk export and spreadsheets |
-| XML    | `application/xml`  | For legacy system compatibility           |
+| JSON   | application/json   | Default, structured and readable          |
+| CSV    | text/csv           | Suitable for bulk export and spreadsheets |
+| XML    | application/xml    | For legacy system compatibility           |
 
 Example:
 
@@ -125,11 +125,9 @@ In case of failure, the API returns a standardized error structure:
 
 Always check the status field before processing the data.
 
-Use the request_id in logs or support tickets for traceability.
-
-Prefer json format when integrating with front-end or mobile apps.
-
-For CSV, ensure column order and encoding (UTF-8) are respected.
+- Use the request_id in logs or support tickets for traceability.
+- Prefer json format when integrating with front-end or mobile apps.
+- For CSV, ensure column order and encoding (UTF-8) are respected.
 
 :::
 
@@ -143,7 +141,7 @@ For endpoints returning AI predictions:
 - `labels` follow a controlled vocabulary (see glossary).
 - Prediction outputs may include bounding boxes (`x`, `y`, `width`, `height`) for localization.
 
-Always refer to the [Interpreting AI Output](../ai/understanding-results) section for guidance on clinical relevance.
+Always refer to the [Interpreting AI Output](../ai-insights/interpreting-results) section for guidance on clinical relevance.
 
 ---
 

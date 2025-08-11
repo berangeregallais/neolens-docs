@@ -54,6 +54,4 @@ This documentation **partially complies with Annex IV of the European Union’s 
 It has been structured to **demonstrate best practices** in transparency, interpretability, and risk management, within the scope of a **fictional portfolio project**.
 
 This is not a legally binding document, but an **illustration of how technical writers and documentation engineers can contribute** to trustworthy AI by aligning with regulatory expectations.
-
-→ See the dedicated page: [Conformity with AI Act Annex IV](../ai-insights/ai-act-conformity.md)
 :::

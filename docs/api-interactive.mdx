@@ -40,7 +40,7 @@ authentication: Bearer [Your API Key]
 content_type: multipart/form-data
 
 # File Upload Section
-image_file: [Choose File] # Upload DICOM, PNG, or JPG
+image_file: Choose File # Upload DICOM, PNG, or JPG
 confidence_threshold: 0.75 # Slider: 0.1 - 1.0
 modality: "auto-detect" # Dropdown: auto, CT, MRI, X-ray
 
@@ -49,7 +49,7 @@ model_version: "v3.2.1" # Dropdown
 verbosity: "standard" # minimal, standard, verbose
 region_of_interest: "auto" # auto, thorax, abdomen, brain
 
-[Send Request] [Clear] [Copy as cURL]
+Send Request | Clear | Copy as cURL
 ```
 
 **Expected Response Preview:**
@@ -112,7 +112,7 @@ result = response.json()
 print(f"Analysis complete: {result['data']['findings']}")
 ```
 
-**Actions:** [Copy Code] [Run in Notebook] [Modify Parameters]
+**Actions:** Copy Code | Run in Notebook | Modify Parameters
 
 ### Response Visualization
 
@@ -359,7 +359,7 @@ Avg Response:    ████████░░ 8.3s (Target: <15s)
 
 #### Search API Endpoints
 
-**Search:** `[Search box: "image upload"]` **[🔍]**
+**Search:** `Search: "image upload"` **🔍**
 
 **Results (3 found):**
 
@@ -371,7 +371,7 @@ Avg Response:    ████████░░ 8.3s (Target: <15s)
    - `Match: multiple image upload`
    - *[Try Now]* *[View Docs]* *[Copy Example]*
 
-3. **GET /v1/images/{id}** - Retrieve uploaded image metadata
+3. **`GET /v1/images/{id}`** - Retrieve uploaded image metadata
    - `Match: uploaded image information`
    - *[Try Now]* *[View Docs]* *[Copy Example]*
 
@@ -411,7 +411,7 @@ Based on your recent activity, you might be interested in:
 
 ---
 
-:::tip[Interactive API Benefits]
+:::tip Interactive API Benefits
 
 - **Zero setup**: No installation or configuration required
 - **Real-time testing**: See actual API responses immediately  
@@ -427,5 +427,5 @@ Based on your recent activity, you might be interested in:
 
 - [Performance Metrics](./api-reference/performance-metrics)
 - [Getting Started Guide](./getting-started/getting-started)
-- [API Reference](./api-reference/endpoints)
+- [API Reference](../api-reference/endpoints)
 - [Troubleshooting](./api-reference/api-troubleshooting)

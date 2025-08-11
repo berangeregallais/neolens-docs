@@ -1,5 +1,5 @@
 ---
-slug: api/rate-limiting
+slug: rate-limiting
 title: Rate Limiting
 ---
 

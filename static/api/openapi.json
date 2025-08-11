@@ -5,6 +5,12 @@
     "version": "1.0.0",
     "description": "Fictional API for intelligent medical image analysis. For documentation demo purposes only."
   },
+  "servers": [
+    {
+      "url": "https://neolens-demo.free.beeceptor.com",
+      "description": "Mock API Server (Beeceptor)"
+    }
+  ],
   "paths": {
     "/analyze": {
       "post": {
@@ -67,6 +73,44 @@
           },
           "500": {
             "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/v1/images/{id}": {
+      "get": {
+        "summary": "Retrieve uploaded image metadata",
+        "description": "Returns metadata for an uploaded medical image.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Unique image identifier"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Image metadata returned successfully",
+            "content": {
+              "application/json": {
+                "example": {
+                  "id": "IMG-987654",
+                  "uploadedAt": "2025-07-20T09:15:00Z",
+                  "format": "DICOM",
+                  "sizeKB": 5120,
+                  "dimensions": "1024x1024",
+                  "modality": "CT",
+                  "patientId": "P-123456"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Image not found"
           }
         }
       }

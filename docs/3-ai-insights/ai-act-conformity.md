@@ -18,8 +18,8 @@ A general description of the AI system, its intended purpose, and the system's o
 
 **Documentation Mapping:**  
 
-- [`overview.md`](overview.md) – Provides a high-level description of Neolens' purpose (medical image analysis), technical logic, and user base.  
-- [`use-cases-by-industry.md`](../ai-insights/use-cases-by-industry.md) – Lists specific real-world scenarios across clinical sectors.  
+- **AI System Overview** – Provides a high-level description of Neolens' purpose (medical image analysis), technical logic, and user base.  
+- [`use-cases-by-industry.md`](./use-cases-by-industry.md) – Lists specific real-world scenarios across clinical sectors.  
 
 ---
 
@@ -30,9 +30,9 @@ Information about the development process, training data sources, and data gover
 
 **Documentation Mapping:**  
 
-- [`ai-concepts.md`](../ai-insights/ai-concepts.md) – Clarifies key terms related to model training and data handling.  
-- [`configuring-ai.md`](../ai-insights/configuring-ai.md) – Explains parameterization and configuration logic.  
-- [`ai-limitations.md`](../ai-insights/ai-limitations.md) – States known limitations, biases, and performance considerations.
+- [`ai-concepts.md`](./ai-concepts.md) – Clarifies key terms related to model training and data handling.  
+- [`configuring-ai.md`](./configuring-ai.md) – Explains parameterization and configuration logic.  
+- [`ai-limitations.md`](./ai-limitations.md) – States known limitations, biases, and performance considerations.
 
 ---
 
@@ -43,8 +43,8 @@ A detailed description of the system’s configuration, settings, and limits.
 
 **Documentation Mapping:**
 
-- [`configuring-ai.md`](../ai-insights/configuring-ai.md) – Presents the types of configurable parameters and use cases.  
-- [`interpreting-results.md`](../ai-insights/interpreting-results.md) – Explains how parameter changes affect outputs.
+- [`configuring-ai.md`](./configuring-ai.md) – Presents the types of configurable parameters and use cases.  
+- [`interpreting-results.md`](./interpreting-results.md) – Explains how parameter changes affect outputs.
 
 ---
 
@@ -55,8 +55,8 @@ Details of how human oversight is ensured during AI usage.
 
 **Documentation Mapping:**  
 
-- [`best-practices.md`](../ai-insights/best-practices.md) – Lists recommended human interventions and verification workflows.  
-- [`ai-troubleshooting.md`](../ai-insights/ai-troubleshooting.md) – Supports diagnostic guidance for human operators.
+- [`best-practices.md`](./best-practices.md) – Lists recommended human interventions and verification workflows.  
+- [`ai-troubleshooting.md`](./ai-troubleshooting.md) – Supports diagnostic guidance for human operators.
 
 ---
 
@@ -67,9 +67,9 @@ Information on accuracy, robustness, and cybersecurity resilience.
 
 **Documentation Mapping:**  
 
-- [`detection.md`](../functional-modules/detection.md)  
-- [`classification.md`](../functional-modules/classification.md)  
-- [`ai-limitations.md`](../ai-insights/ai-limitations.md) – Describes performance thresholds and known limitations.  
+- [`detection.md`](../functional-modules/detection)  
+- [`classification.md`](../functional-modules/classification)  
+- [`ai-limitations.md`](./ai-limitations.md) – Describes performance thresholds and known limitations.  
 
 ---
 
@@ -80,8 +80,8 @@ Details of the measures taken to comply with obligations under the AI Act.
 
 **Documentation Mapping:**
 
-- [`gdpr.md`](../compliance/gdpr.md) – Describes GDPR alignment, data minimization, and security-by-design.  
-- [`ai-limitations.md`](../ai-insights/ai-limitations.md) – Covers identified ethical and legal constraints.
+- [`gdpr.md`](../compliance/gdpr) – Describes GDPR alignment, data minimization, and security-by-design.  
+- [`ai-limitations.md`](./ai-limitations.md) – Covers identified ethical and legal constraints.
 
 ---
 
@@ -92,8 +92,8 @@ Mechanisms for logging, traceability, and version control.
 
 **Documentation Mapping:**  
 
-- [`authentification.md`](../getting-started/authentification.md) – Details how API calls are authenticated and logged.  
-- [`api-troubleshooting.md`](../api-reference/api-troubleshooting.md) – Explains how logs are used for error diagnosis.
+- [`authentication.md`](../getting-started/authentication) – Details how API calls are authenticated and logged.  
+- [`api-troubleshooting.md`](../api-reference/api-troubleshooting) – Explains how logs are used for error diagnosis.
 
 ---
 
