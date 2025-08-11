@@ -26,7 +26,7 @@ Neolens is designed for:
 
 #### 1. Create your account
 
-Sign up for free on [neolens.ai](https://neolens.ai) to access the dashboard and generate your API keys.
+Sign up for free on [neolens.ai](https://neolens-fictional.ai) to access the dashboard and generate your API keys.
 
 > 🚧 **Note:** This is a fictional project. Do not enter personal data.
 

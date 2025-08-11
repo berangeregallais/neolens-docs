@@ -24,7 +24,7 @@ It includes:
 
 ## 📚 Live Documentation
 
-👉 [View the live Neolens API documentation here](https://berangeregallais.github.io/neolens-doc/)
+👉 [View the live Neolens API documentation here](https://berangeregallais.github.io/neolens-docs/)
 
 ## 🏗️ Tech Stack
 
