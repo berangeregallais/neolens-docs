@@ -1,6 +1,7 @@
 ---
 title: API Endpoints
 slug: /api-reference/endpoints
+description: "Detailed reference of Neolens API endpoints with usage, authentication scopes, request examples, and security notes for managing medical scans, AI analysis, and user audits."
 ---
 
 ## API Endpoints

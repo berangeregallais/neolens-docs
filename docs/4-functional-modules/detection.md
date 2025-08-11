@@ -1,6 +1,7 @@
 ---
 slug: /functional-modules/detection
 title: Anomaly Detection Module
+description: "Detection pipeline overview: diagram showing Neolens AI scanning medical images with CNN, generating bounding boxes and heatmaps for anomalies."
 ---
 
 ## 🔍 Anomaly Detection
@@ -21,7 +22,7 @@ This module flags potential abnormalities to support radiologists in prioritizin
 - Applies **convolutional neural networks (CNNs)** trained on labeled datasets.
 - Outputs bounding boxes and heatmaps highlighting areas of interest.
 
-![Detection pipeline overview](/img/neolens-pipeline.png)
+![Detection pipeline overview: diagram illustrating the Neolens anomaly detection process with input medical images, CNN analysis, bounding boxes, and heatmaps highlighting suspicious regions.](/img/neolens-pipeline.png)
 
 ---
 

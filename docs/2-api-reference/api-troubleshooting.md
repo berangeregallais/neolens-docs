@@ -1,6 +1,7 @@
 ---
 slug: /api-reference/api-troubleshooting
 title: API Troubleshooting
+description: "Comprehensive guide to diagnosing and handling common API errors in Neolens, including status codes, example payloads, client-side handling, and troubleshooting tips."
 ---
 
 ## API Troubleshooting

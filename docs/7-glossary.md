@@ -1,6 +1,7 @@
 ---
 slug: glossary
 title: Glossary
+description: 'Key terms and definitions related to medical imaging AI, healthcare IT standards, and technical concepts used in Neolens.'
 ---
 
 ## 📚 Glossary

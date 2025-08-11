@@ -1,6 +1,7 @@
 ---
 slug: /functional-modules/measurement
 title: Anatomical Measurement Module
+description: "Automatically extracts precise anatomical dimensions from medical images to support diagnosis, treatment planning, and monitoring."
 ---
 
 ## 📏 Anatomical Measurement

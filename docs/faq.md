@@ -1,6 +1,7 @@
 ---
 slug: faq
 title: FAQ
+description: 'Answers to common questions about Neolens API usage, compliance, troubleshooting, and capabilities.'
 ---
 
 ## Frequently Asked Questions

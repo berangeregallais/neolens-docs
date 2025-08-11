@@ -1,6 +1,7 @@
 ---
 slug: /api-reference/error-handling
 title: Error Handling
+description: "Comprehensive guide to handling errors in Neolens API, including HTTP status codes, error formats, AI-specific issues, rate limiting, and best practices for robust client-side error management."
 ---
 
 ## Error Handling

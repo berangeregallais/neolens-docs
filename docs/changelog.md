@@ -1,6 +1,7 @@
 ---
 slug: changelog
 title: Changelog
+description: 'Track the latest updates, enhancements, and fixes in the Neolens API documentation to stay informed about improvements and new features.'
 ---
 
 ## Changelog

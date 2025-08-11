@@ -1,6 +1,7 @@
 ---
 slug: /ai-insights/ai-concepts
 title: Introduction to AI Concepts
+description: "A concise glossary of fundamental AI and machine learning concepts behind Neolens, designed to help users understand the platform’s outputs, behavior, and limitations. Perfect for developers, clinicians, and technical users seeking clarity on key terminology."
 ---
 
 ## Introduction to AI Concepts

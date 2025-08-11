@@ -1,6 +1,7 @@
 ---
 slug: /integration/export-formats
 title: Export Formats
+description: "Supports multiple export formats, enabling seamless integration, reporting, and clinical documentation."
 ---
 
 ## 💾 Export Formats

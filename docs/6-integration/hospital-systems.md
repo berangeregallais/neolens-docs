@@ -1,6 +1,7 @@
 ---
 slug: /integration/hospital-systems
 title: Hospital Systems Integration
+description: "Supports various export formats for seamless integration and clinical reporting."
 ---
 
 ## 🏥 Hospital Systems Integration

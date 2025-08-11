@@ -1,6 +1,7 @@
 ---
 slug: /api-reference/performance-metrics
 title: Performance Metrics & UX
+description: "Detailed overview of Neolens API performance metrics, benchmarks, user experience, optimization strategies, usage analytics, monitoring, and roadmap for continuous improvement."
 ---
 
 ## 📊 Performance Metrics & User Experience

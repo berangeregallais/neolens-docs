@@ -1,6 +1,7 @@
 ---
 slug: /compliance/gdpr
 title: GDPR Compliance
+description: "Ensures patient data is processed securely and transparently in full compliance with the EU GDPR."
 ---
 
 ## 🔐 GDPR Compliance

@@ -1,6 +1,7 @@
 ---
 slug: ai-act-conformity
 title: Conformity with AI Act – Annex IV
+description: "Detailed mapping of Neolens documentation to the requirements of Annex IV of the EU Artificial Intelligence Act (AI Act) for high-risk AI systems, demonstrating regulatory compliance through comprehensive technical documentation."
 ---
 
 ## Conformity with the AI Act (Annex IV)

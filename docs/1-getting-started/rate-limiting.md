@@ -1,6 +1,7 @@
 ---
 slug: rate-limiting
 title: Rate Limiting
+description: "Overview of Neolens API rate limiting policies ensuring performance, security, fair use, and regulatory compliance in healthcare applications."
 ---
 
 ## Rate Limiting

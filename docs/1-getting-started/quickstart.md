@@ -1,6 +1,7 @@
 ---
 slug: quickstart
 title: Quickstart Guide
+description: "Quickstart guide to rapidly integrate Neolens API for secure, efficient medical image analysis using authentication and the /analyze endpoint."
 ---
 
 ## Quickstart Guide

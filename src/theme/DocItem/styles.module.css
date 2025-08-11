@@ -1,0 +1,9 @@
+.lastUpdated {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2rem;
+  font-style: italic;
+  text-align: right;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}

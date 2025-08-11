@@ -1,6 +1,7 @@
 ---
 slug: /compliance/ethics
 title: Ethics and Compliance
+description: "Defines the regulatory, ethical, and traceability principles guiding safe and trustworthy medical AI use."
 ---
 
 ## ⚖️ Ethics and Compliance

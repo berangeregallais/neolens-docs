@@ -1,6 +1,7 @@
 ---
 slug: /ai-insights/use-cases-by-industry
 title: AI Use Cases by Industry
+description: "Discover how Neolens AI empowers diverse industries—from healthcare to research, operations, and public health—with actionable imaging insights that boost efficiency, accuracy, and compliance."
 ---
 
 ## 🧪 AI Use Cases by Industry

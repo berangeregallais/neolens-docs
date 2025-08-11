@@ -1,6 +1,7 @@
 ---
 slug: /ai-insights/configuring-ai
 title: Configuring the AI Engine
+description: "Explore how to customize Neolens AI to your specific clinical and research needs. This guide details key parameters like sensitivity, analysis depth, verbosity, and model selection, balancing performance and accuracy. Learn to configure profiles, apply advanced options, and monitor impacts—empowering you to harness AI insights responsibly and effectively."
 ---
 
 ## ⚙️ Configuring the AI Engine

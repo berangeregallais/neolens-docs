@@ -1,6 +1,7 @@
 ---
 slug: /functional-modules/report-generation
 title: Report Generation Module
+description: "Generates structured preliminary medical reports from analysis results to streamline diagnosis and documentation."
 ---
 
 ## 📝 Report Generation

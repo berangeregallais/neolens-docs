@@ -1,6 +1,7 @@
 ---
 slug: /api-reference/request-parameters
 title: Request Parameters
+description: "Comprehensive reference for Neolens API request parameters, including query, body, and headers, with best practices and regulatory guidance to ensure secure, compliant, and efficient API usage."
 ---
 
 ## Request Parameters

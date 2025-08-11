@@ -1,6 +1,7 @@
 ---
 slug: authentication
 title: Authentication
+description: 'Secure your Neolens API requests with API key authentication, role-based access control, and best practices for key management.'
 ---
 
 ## Authentication

@@ -1,6 +1,7 @@
 ---
 slug: /functional-modules/classification
 title: Pathology Classification Module
+description: "The Classification module identifies and prioritizes medical pathologies from images, delivering confidence-scored diagnostic labels to support clinical decisions."
 ---
 
 ## 🏷️ Pathology Classification

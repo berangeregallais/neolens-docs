@@ -1,6 +1,7 @@
 ---
 slug: /ai-insights/ai-troubleshooting
 title: AI Troubleshooting
+description: "Troubleshooting guide for common AI issues in Neolens — from inconsistent results and model refusals to API errors. Learn how to diagnose problems, interpret error messages, and when to escalate to support for a smooth, reliable experience."
 ---
 
 > _When working with intelligent systems, unexpected behaviors may occur — from irrelevant results to model refusals or latency issues. This section helps you identify, understand, and resolve common AI-related problems in Neolens._

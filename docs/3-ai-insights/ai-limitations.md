@@ -1,6 +1,7 @@
 ---
 slug: /ai-insights/ai-limitations
 title: Limitations of Neolens AI
+description: "An overview of Neolens AI’s known technical and clinical limitations, including model biases, lack of contextual understanding, and typical failure scenarios. Essential reading to set realistic expectations and ensure responsible use in medical workflows."
 ---
 
 ## ⚠️ Limitations of Neolens AI

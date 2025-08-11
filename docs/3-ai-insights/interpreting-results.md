@@ -1,6 +1,7 @@
 ---
 slug: /ai-insights/interpreting-results
 title: Interpreting AI Results
+description: "Quickly understand Neolens AI results—confidence levels, labels, and priorities—to use them safely and effectively in your clinical workflow. Stay aware of limitations and best practices to keep human judgment central."
 ---
 
 ## 🔍 Interpreting AI Results

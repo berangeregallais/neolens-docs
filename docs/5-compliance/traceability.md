@@ -1,6 +1,7 @@
 ---
 slug: /compliance/traceability
 title: Traceability and Auditability
+description: "Provides secure logging and audit trails to ensure clinical accountability and regulatory compliance."
 ---
 
 ## 📋 Traceability and Auditability

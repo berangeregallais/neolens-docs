@@ -1,6 +1,7 @@
 ---
 slug: /functional-modules/uncertainty-estimation
 title: Uncertainty Estimation Module
+description: "Quantifies prediction confidence to help clinicians assess the reliability of AI-generated results and prioritize expert review."
 ---
 
 ## 🔎 Uncertainty Estimation

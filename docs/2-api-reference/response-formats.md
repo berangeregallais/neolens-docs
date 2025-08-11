@@ -1,6 +1,7 @@
 ---
 slug: /api-reference/response-formats
 title: Response Formats
+description: "Structured response formats for seamless integration, clear error reporting, and AI-powered insights with Neolens API."
 ---
 
 ## Response Formats

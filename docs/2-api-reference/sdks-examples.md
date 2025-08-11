@@ -1,6 +1,7 @@
 ---
 slug: sdks-examples
 title: SDK Examples
+description: "Simple SDK examples for quick API access with Python, JavaScript, and curl — get started fast with Neolens."
 ---
 
 <!-- markdownlint-disable MD033 -->
