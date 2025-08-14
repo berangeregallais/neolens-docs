@@ -14,7 +14,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'berangeregallais',
   projectName: 'neolens-docs',
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'master',
   trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
