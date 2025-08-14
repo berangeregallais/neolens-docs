@@ -3,7 +3,7 @@ name: Deploy Docusaurus site
 on:
   push:
     branches:
-      - main  # Remplace par ta branche principale si nécessaire
+      - master
 
 jobs:
   build-and-deploy:
