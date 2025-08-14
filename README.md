@@ -40,7 +40,7 @@ It includes:
 
 ## 📚 Live Documentation
 
-👉 [Access the live Neolens API docs here](https://berangeregallais.github.io/neolens-doc/)
+👉 [Access the live Neolens API docs here](https://berangeregallais.github.io/neolens-docs/intro)
 
 ## 🏗️ Tech Stack
 
