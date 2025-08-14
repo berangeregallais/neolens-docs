@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkneolens_docs=self.webpackChunkneolens_docs||[]).push([[2498],{92498:(e,s,c)=>{c.d(s,{createArchitectureServices:()=>n.S});var n=c(73009);c(58198)}}]);
