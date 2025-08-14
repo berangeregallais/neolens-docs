@@ -1,5 +1,5 @@
 ---
-slug: intro
+slug: /
 title: Welcome to Neolens
 description: Intelligent Medical Imaging API — Explore advanced AI-powered medical image analysis with Neolens. Interactive docs, hands-on examples, and compliance insights.
 sidebar_position: 1

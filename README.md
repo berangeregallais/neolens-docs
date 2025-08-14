@@ -2,7 +2,7 @@
 
 ![Deploy to GitHub Pages](https://github.com/berangeregallais/neolens-docs/actions/workflows/deploy.yml/badge.svg)  
 `Build Status`  
-[![View Documentation](https://img.shields.io/badge/View%20Documentation-Online-blue)](https://berangeregallais.github.io/neolens-doc/)  
+[![View Documentation](https://img.shields.io/badge/View%20Documentation-Online-blue)](https://berangeregallais.github.io/neolens-docs/intro)  
 ![Fictional Project](https://img.shields.io/badge/Fictional_Project-Portfolio_Purpose-grey)  
 
 ---
@@ -40,7 +40,7 @@ It includes:
 
 ## 📚 Live Documentation
 
-👉 [Access the live Neolens API docs here](https://berangeregallais.github.io/neolens-docs/)
+👉 [Access the live Neolens API docs here](https://berangeregallais.github.io/neolens-docs/intro)
 
 ## 🏗️ Tech Stack
 
