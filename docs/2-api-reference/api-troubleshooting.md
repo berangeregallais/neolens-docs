@@ -108,14 +108,6 @@ fetch("https://api.neolens.ai/v1/analyze", {
 
 ---
 
-## 🔗 Helpful Links
-
-- [Authentication & API Keys](../getting-started/authentication)
-- [Rate Limiting](../getting-started/rate-limiting)
-- [Error Handling](./error-handling)
-
----
-
 ## 📋 Understanding Custom Error Codes
 
 > The following table explains optional fields you may find in error responses.

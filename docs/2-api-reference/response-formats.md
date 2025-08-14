@@ -140,7 +140,7 @@ For endpoints returning AI predictions:
 - `labels` follow a controlled vocabulary (see glossary).
 - Prediction outputs may include bounding boxes (`x`, `y`, `width`, `height`) for localization.
 
-Always refer to the [Interpreting AI Output](../ai-insights/interpreting-results) section for guidance on clinical relevance.
+Always refer to the [Interpreting AI Output](/ai-insights/interpreting-results) section for guidance on clinical relevance.
 
 ---
 

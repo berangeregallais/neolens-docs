@@ -38,18 +38,18 @@ Once logged in, navigate to **Settings > API Keys** and create a key with approp
 - `write:images` → upload and analyze images  
 - `read:models` → fetch model capabilities and parameters  
 
-ℹ️ [Learn more about Authentication](./authentication)
+ℹ️ [Learn more about Authentication](/getting-started/authentication)
 
 ---
 
 ### 3. Choose your integration path
 
-| Use Case                    | Recommended Tool              | Documentation                               |
-|-----------------------------|-------------------------------|---------------------------------------------|
-| Backend devs (Node, Python) | REST API / SDK                | [API Reference](../api-reference/endpoints) |
-| No-code / Quick tests       | Web UI                        | [Try Interactive API](../api-interactive)   |
-| Research / Jupyter users    | Python SDK (in progress)      | Coming soon                                 |
-| Bulk upload / automation    | REST API + CLI (soon)         | [Quickstart](./quickstart)                  |
+| Use Case                    | Recommended Tool              | Documentation                                |
+|-----------------------------|-------------------------------|----------------------------------------------|
+| Backend devs (Node, Python) | REST API / SDK                | [API Reference](/api-reference/endpoints/)   |
+| No-code / Quick tests       | Web UI                        | [Try Interactive API](/api-interactive/)     |
+| Research / Jupyter users    | Python SDK (in progress)      | Coming soon                                  |
+| Bulk upload / automation    | REST API + CLI (soon)         | [Quickstart](/getting-started/quickstart)    |
 
 ---
 
@@ -74,7 +74,7 @@ Each analysis uses a specific model (e.g. anomaly-detection, segmentation, biome
 Default models are preselected, but you can override via API parameter:
 "model_id": "segmentation-v3"
 
-See [AI Configuration](../ai-insights/configuring-ai) for tuning options. for tuning options.
+See [AI Configuration](/ai-insights/configuring-ai) for tuning options. for tuning options.
 
 ---
 
@@ -86,7 +86,7 @@ Results are returned as:
 - Overlay visualization: see results on DICOM viewer or dashboard.
 - Report preview (HTML/PDF): auto-generated clinical summary.
 
-➡️ [Learn to interpret results](../ai-insights/interpreting-results)
+➡️ [Learn to interpret results](/ai-insights/interpreting-results)
 
 ---
 
@@ -101,14 +101,14 @@ Results are returned as:
 
 ## Next steps
 
-- 📄 [Quickstart](./quickstart)
-- 🔐 [Authentication](./authentication)
-- 📚 [Full API Reference](../api-reference/endpoints)
-- 🤖 [AI Concepts](../ai-insights/ai-concepts)
-- 🔧 [AI Configuration](../ai-insights/configuring-ai)
-- 🔍 [Interpreting Results](../ai-insights/interpreting-results)
-- 💬 [API Troubleshooting](../api-reference/api-troubleshooting)
-- ❓ [FAQ](../faq)
+- 📄 [Quickstart](/getting-started/quickstart)
+- 🔐 [Authentication](/getting-started/authentication)
+- 📚 [Full API Reference](/api-reference/endpoints)
+- 🤖 [AI Concepts](/ai-insights/ai-concepts)
+- 🔧 [AI Configuration](/ai-insights/configuring-ai)
+- 🔍 [Interpreting Results](/ai-insights/interpreting-results)
+- 💬 [API Troubleshooting](/api-reference/api-troubleshooting)
+- ❓ [FAQ](/faq)
 
 ---
 

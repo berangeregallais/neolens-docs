@@ -12,7 +12,7 @@ description: "Discover essential best practices to use Neolens AI safely and eff
 
 - Know which version of the model is deployed (check `model_id` in metadata).
 - Be aware of its training scope (e.g., adult vs pediatric data).
-- Understand its known strengths and blind spots (see [AI Limitations](./ai-limitations)).
+- Understand its known strengths and blind spots (see [AI Limitations](/ai-insights/ai-limitations/)).
 
 :::tip
 Use the `/model/info` endpoint to retrieve current version details and changelogs.

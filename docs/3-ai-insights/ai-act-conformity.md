@@ -66,8 +66,8 @@ Information on accuracy, robustness, and cybersecurity resilience.
 
 **Documentation Mapping:**  
 
-- [`detection.md`](../functional-modules/detection)  
-- [`classification.md`](../functional-modules/classification)  
+- [`detection.md`](/functional-modules/detection/)  
+- [`classification.md`](/functional-modules/classification/)  
 - [`ai-limitations.md`](./ai-limitations.md) – Describes performance thresholds and known limitations.  
 
 ---
@@ -79,7 +79,7 @@ Details of the measures taken to comply with obligations under the AI Act.
 
 **Documentation Mapping:**
 
-- [`gdpr.md`](../compliance/gdpr) – Describes GDPR alignment, data minimization, and security-by-design.  
+- [`gdpr.md`](/compliance/gdpr/) – Describes GDPR alignment, data minimization, and security-by-design.  
 - [`ai-limitations.md`](./ai-limitations.md) – Covers identified ethical and legal constraints.
 
 ---
@@ -91,8 +91,8 @@ Mechanisms for logging, traceability, and version control.
 
 **Documentation Mapping:**  
 
-- [`authentication.md`](../getting-started/authentication) – Details how API calls are authenticated and logged.  
-- [`api-troubleshooting.md`](../api-reference/api-troubleshooting) – Explains how logs are used for error diagnosis.
+- [`authentication.md`](/getting-started/authentication/) – Details how API calls are authenticated and logged.  
+- [`api-troubleshooting.md`](/api-reference/api-troubleshooting/) – Explains how logs are used for error diagnosis.
 
 ---
 

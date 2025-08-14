@@ -276,7 +276,7 @@ Track how configuration changes affect:
 
 ## 🔗 Related Documentation
 
-- [Interpreting AI Results](./interpreting-results)
-- [AI Limitations](./ai-limitations)
-- [Best Practices](./best-practices)
-- [API Troubleshooting](../api-reference/api-troubleshooting)
+- [Interpreting AI Results](/ai-insights/interpreting-results/)
+- [AI Limitations](/ai-insights/ai-limitations/)
+- [Best Practices](/ai-insights/best-practices/)
+- [API Troubleshooting](/api-reference/api-troubleshooting/)

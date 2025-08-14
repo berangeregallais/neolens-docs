@@ -11,11 +11,11 @@ const config = {
   },
 
   url: 'https://berangeregallais.github.io',
-  baseUrl: '/neolens-docs/',
+  baseUrl: '/',
   organizationName: 'berangeregallais',
   projectName: 'neolens-docs',
   deploymentBranch: 'gh-pages',
-
+  trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
 

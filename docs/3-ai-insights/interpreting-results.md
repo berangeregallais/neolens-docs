@@ -383,7 +383,7 @@ Structured reporting templates integrate AI findings:
 
 ## 🔗 Related Documentation
 
-- [Configuring AI](./configuring-ai)
-- [AI Limitations](./ai-limitations)
-- [Best Practices](./best-practices)
-- [Uncertainty Estimation](../functional-modules/uncertainty-estimation)
+- [Configuring AI](/ai-insights/configuring-ai)
+- [AI Limitations](/ai-insights/ai-limitations/)
+- [Best Practices](/ai-insights/best-practices/)
+- [Uncertainty Estimation](/functional-modules/uncertainty-estimation/)
