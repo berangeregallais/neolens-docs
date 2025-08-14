@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=./intro" />
+    <script>
+      // Redirection automatique basée sur l'URL actuelle
+      (function() {
+        try {
+          // Récupère la partie "repo" du chemin pour GitHub Pages
+          const pathParts = window.location.pathname.split('/').filter(Boolean);
+          const repoBase = pathParts.length > 0 ? '/' + pathParts[0] + '/' : '/';
+          window.location.replace(repoBase + 'intro');
+        } catch (e) {
+          console.error('Redirection failed', e);
+        }
+      })();
+    </script>
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 20vh;
+        color: #444;
+      }
+      a {
+        color: #0078d7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Redirecting…</h1>
+    <p>If you are not redirected automatically, <a href="./intro">click here</a>.</p>
+  </body>
+</html>
