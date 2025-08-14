@@ -20,7 +20,7 @@ const config = {
   onBrokenMarkdownLinks: 'throw',
 
   stylesheets: [
-    '/css/prism-overrides.css', // Prism overrides
+    '/css/prism-overrides.css',
   ],
 
   i18n: {
