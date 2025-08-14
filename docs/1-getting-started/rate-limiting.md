@@ -4,15 +4,13 @@ title: Rate Limiting
 description: "Overview of Neolens API rate limiting policies ensuring performance, security, fair use, and regulatory compliance in healthcare applications."
 ---
 
-## Rate Limiting
-
 To ensure performance, security, and fair usage, the **Neolens API** enforces strict rate limiting policies. These limits help prevent abuse, guarantee system availability, and align with medical data governance standards, including **traceability**, **compliance**, and **ethical access** to sensitive imaging data.
 
 > Rate limiting is not just a technical safeguard — it's also key to ensuring **traceability**, **auditability**, and **responsible AI** usage in healthcare applications.
 
 ---
 
-### Standard Rate Limits
+## Standard Rate Limits
 
 By default, the following limits apply:
 
@@ -26,7 +24,7 @@ If these limits are exceeded, a `429 Too Many Requests` error is returned.
 
 ---
 
-### Best Practices
+## Best Practices
 
 :::tip[Optimize your usage]
 
@@ -48,7 +46,7 @@ You can monitor your usage via the response headers:
 
 ---
 
-### Custom Limits for Hospital Partners
+## Custom Limits for Hospital Partners
 
 :::note[Custom Access Policies]
 
@@ -64,7 +62,7 @@ For more information, contact your Neolens account manager.
 
 ---
 
-### Error Handling
+## Error Handling
 
 When the rate limit is exceeded, the API returns:
 
@@ -80,7 +78,7 @@ Use the `Retry-After` header to implement smart retries and backoff mechanisms.
 
 ---
 
-### Troubleshooting
+## Troubleshooting
 
 Why am I getting 429 errors even when sending few requests?
 
@@ -96,7 +94,7 @@ Check your logs and make sure requests are spaced properly and distributed effic
 
 ---
 
-### Regulatory and Ethical Considerations
+## Regulatory and Ethical Considerations
 
 In the healthcare domain, rate limiting plays a critical role in:
 
@@ -105,4 +103,4 @@ In the healthcare domain, rate limiting plays a critical role in:
 - Complying with GDPR and healthcare data privacy regulations
 - Ensuring fair and auditable access across different roles and institutions
 
-Need a higher rate limit? Contact our support team or refer to your SLA.
+Need a higher rate limit ? Contact our support team or refer to your SLA.

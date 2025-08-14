@@ -28,3 +28,31 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Fix style for punctuation in dark mode */
+html[data-theme='dark'] code .token.operator {
+  color: #cccccc !important; /* ou la couleur que tu veux */
+  background: transparent !important;
+}
+
+html[data-theme='light'] code .token.operator {
+  color: #555555 !important;
+}
+
+.mermaid-container {
+  overflow: auto; /* Scroll si contenu trop grand */
+  max-width: 100%; /* limite largeur conteneur */
+  border: 1px solid #ccc;
+  padding: 10px;
+  touch-action: pinch-zoom; /* active zoom tactile sur mobiles */
+}
+
+/* Zoom via CTRL + molette, natif navigateur */
+
+.theme-light pre[class*="language-"] code {
+  color: #333 !important;
+}
+
+
+
+

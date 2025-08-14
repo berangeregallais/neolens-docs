@@ -4,14 +4,12 @@ title: Getting Started
 description: "Learn how to start using Neolens with your preferred workflow: API, SDK, or web interface."
 ---
 
-## Getting Started
-
 Welcome to **Neolens** – your intelligent medical imaging assistant.  
 This guide walks you through the first steps to get up and running with the API, SDKs, or Web Interface depending on your use case.
 
 ---
 
-### Who is this for?
+## Who is this for ?
 
 Neolens is designed for:
 
@@ -22,9 +20,9 @@ Neolens is designed for:
 
 ---
 
-### Step-by-step onboarding
+## Step-by-step onboarding
 
-#### 1. Create your account
+### 1. Create your account
 
 Sign up for free on [neolens.ai](https://neolens-fictional.ai) to access the dashboard and generate your API keys.
 
@@ -32,7 +30,7 @@ Sign up for free on [neolens.ai](https://neolens-fictional.ai) to access the das
 
 ---
 
-#### 2. Generate an API key
+### 2. Generate an API key
 
 Once logged in, navigate to **Settings > API Keys** and create a key with appropriate scopes.
 
@@ -44,7 +42,7 @@ Once logged in, navigate to **Settings > API Keys** and create a key with approp
 
 ---
 
-#### 3. Choose your integration path
+### 3. Choose your integration path
 
 | Use Case                    | Recommended Tool              | Documentation                               |
 |-----------------------------|-------------------------------|---------------------------------------------|
@@ -55,7 +53,7 @@ Once logged in, navigate to **Settings > API Keys** and create a key with approp
 
 ---
 
-#### 4. Upload an image
+### 4. Upload an image
 
 Example API request:
 
@@ -70,7 +68,7 @@ Or upload via the dashboard:
 
 ---
 
-#### 5. Choose a model
+### 5. Choose a model
 
 Each analysis uses a specific model (e.g. anomaly-detection, segmentation, biometry).
 Default models are preselected, but you can override via API parameter:
@@ -80,7 +78,7 @@ See [AI Configuration](../ai-insights/configuring-ai) for tuning options. for tu
 
 ---
 
-#### 6. Interpret the results
+### 6. Interpret the results
 
 Results are returned as:
 
@@ -92,7 +90,7 @@ Results are returned as:
 
 ---
 
-#### Best practices
+### Best practices
 
 - 🧪 Test with various modalities and resolutions.
 - ✅ Always validate results with medical professionals.

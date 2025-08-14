@@ -4,19 +4,17 @@ title: Anomaly Detection Module
 description: "Detection pipeline overview: diagram showing Neolens AI scanning medical images with CNN, generating bounding boxes and heatmaps for anomalies."
 ---
 
-## 🔍 Anomaly Detection
-
 The **Detection** module automatically identifies suspicious regions in medical images, such as X-rays or CT scans.
 
 ---
 
-### 🎯 Purpose
+## 🎯 Purpose
 
 This module flags potential abnormalities to support radiologists in prioritizing cases and reducing oversight.
 
 ---
 
-### 🧩 How It Works
+## 🧩 How It Works
 
 - Uses state-of-the-art **computer vision** techniques to scan images.
 - Applies **convolutional neural networks (CNNs)** trained on labeled datasets.
@@ -26,7 +24,7 @@ This module flags potential abnormalities to support radiologists in prioritizin
 
 ---
 
-### ⚙️ Key Parameters
+## ⚙️ Key Parameters
 
 | Parameter        | Type    | Description                                           | Default  |
 |------------------|---------|-------------------------------------------------------|----------|
@@ -35,13 +33,15 @@ This module flags potential abnormalities to support radiologists in prioritizin
 | `min_area`       | int     | Minimum size in pixels for detected anomalies         | 50       |
 
 :::tip
-Adjust sensitivity to balance false positives vs false negatives.  
-Higher sensitivity catches more anomalies but increases noise.
+
+- Adjust sensitivity to balance false positives vs false negatives.  
+- Higher sensitivity catches more anomalies but increases noise.
+
 :::
 
 ---
 
-### 📦 Output Format
+## 📦 Output Format
 
 Detection results include:
 
@@ -63,7 +63,7 @@ Detection results include:
 
 ---
 
-### 🛠️ Usage Example
+## 🛠️ Usage Example
 
 ```bash
 curl -X POST "https://api.neolens.ai/v1/detection" \
@@ -74,7 +74,7 @@ curl -X POST "https://api.neolens.ai/v1/detection" \
 
 ---
 
-### 🚩 Limitations
+## 🚩 Limitations
 
 - May miss very small or subtle anomalies.
 - False positives possible in noisy images.

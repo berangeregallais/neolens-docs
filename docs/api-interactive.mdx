@@ -4,8 +4,6 @@ title: Interactive API Explorer
 description: 'Try the Neolens API interactively: test endpoints, upload medical images, and get real-time AI analysis with code samples and tutorials.'
 ---
 
-## 🚀 Interactive API Explorer
-
 > Experience the Neolens API hands-on with our interactive documentation. Test endpoints, upload images, and see real AI analysis results without writing code.
 
 ---
@@ -153,7 +151,7 @@ Interactive response viewer with syntax highlighting and expandable sections:
 
 ##### Step 1: Prepare Your Image
 
-- ✅ Download sample image: [`chest_xray_sample.jpg`](https://samples.neolens.ai/chest_xray.jpg)
+- ✅ Download sample image
 - ✅ Ensure image is < 10MB
 - ✅ Supported formats: DICOM (.dcm), JPEG (.jpg), PNG (.png)
 
@@ -274,20 +272,9 @@ Generate realistic API responses for testing:
 
 ### Code Snippet Generator
 
-#### Framework Code Generator
+import CodeSnippetGenerator from '@site/src/components/CodeSnippetGenerator';
 
-**Framework:** `React` `Vue.js` `Angular` `Python Flask` `Node.js Express`
-
-**Features to include:**
-
-- [x] Error handling
-- [x] Progress indicators  
-- [x] File upload validation
-- [x] Response parsing
-- [ ] Retry logic
-- [ ] Caching
-
-**Actions:** [Generate Code] [Download Project] [Open in StackBlitz]
+<CodeSnippetGenerator />
 
 ---
 
@@ -354,38 +341,6 @@ Avg Response:    ████████░░ 8.3s (Target: <15s)
 
 ---
 
-## 🔍 Search & Discovery
-
-### Interactive API Search
-
-#### Search API Endpoints
-
-**Search:** `Search: "image upload"` **🔍**
-
-**Results (3 found):**
-
-1. **POST /v1/analyze** - Upload and analyze medical images
-   - `Match: image upload functionality`
-   - *[Try Now]* *[View Docs]* *[Copy Example]*
-
-2. **POST /v1/batch** - Bulk image processing
-   - `Match: multiple image upload`
-   - *[Try Now]* *[View Docs]* *[Copy Example]*
-
-3. **`GET /v1/images/{id}`** - Retrieve uploaded image metadata
-   - `Match: uploaded image information`
-   - *[Try Now]* *[View Docs]* *[Copy Example]*
-
-### Smart Suggestions
-
-Based on your recent activity, you might be interested in:
-
-- 🎯 **Classification endpoints** - Categorize detected findings
-- 📊 **Report generation** - Create structured medical reports  
-- ⚙️ **Batch processing** - Handle multiple images efficiently
-
----
-
 ## 💡 Tips for Success
 
 ### Getting the Most from Interactive API
@@ -428,5 +383,5 @@ Based on your recent activity, you might be interested in:
 
 - [Performance Metrics](./api-reference/performance-metrics)
 - [Getting Started Guide](./getting-started/getting-started)
-- [API Reference](../api-reference/endpoints)
+- [API Reference](./api-reference/endpoints)
 - [Troubleshooting](./api-reference/api-troubleshooting)

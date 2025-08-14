@@ -4,11 +4,9 @@ title: Request Parameters
 description: "Comprehensive reference for Neolens API request parameters, including query, body, and headers, with best practices and regulatory guidance to ensure secure, compliant, and efficient API usage."
 ---
 
-## Request Parameters
-
 This section describes the parameters commonly used when making requests to the Neolens API.
 
-### 🔍 Query Parameters
+## 🔍 Query Parameters
 
 | Parameter | Type   | Description |
 |-----------|--------|-------------|
@@ -23,7 +21,7 @@ Use `offset` and `limit` together to paginate through large result sets.
 
 :::
 
-### 📦 Request Body Parameters (POST/PUT)
+## 📦 Request Body Parameters (POST/PUT)
 
 | Parameter      | Type       | Description |
 |----------------|------------|-------------|
@@ -32,7 +30,7 @@ Use `offset` and `limit` together to paginate through large result sets.
 | `modality`     | string     | Imaging modality (e.g., `X-ray`, `MRI`, `CT`). |
 | `notes`        | string     | Optional free-text note. |
 
-### 🧾 Headers
+## 🧾 Headers
 
 | Header            | Required | Description |
 |-------------------|----------|-------------|
@@ -40,7 +38,7 @@ Use `offset` and `limit` together to paginate through large result sets.
 | `X-Neolens-Client`| ✅       | Your registered client ID. |
 | `Content-Type`    | ✅       | Always `application/json`. |
 
-### 🎛️ Optional Parameters
+## 🎛️ Optional Parameters
 
 | Parameter      | Type    | Description |
 |----------------|---------|-------------|
@@ -49,7 +47,7 @@ Use `offset` and `limit` together to paginate through large result sets.
 
 ---
 
-### ✅ Best Practices
+## ✅ Best Practices
 
 :::tip[Best Practices]
 
@@ -61,7 +59,7 @@ Use `offset` and `limit` together to paginate through large result sets.
 
 ---
 
-### 📌 Special Cases
+## 📌 Special Cases
 
 :::note[Partner Use Case]
 
@@ -71,10 +69,10 @@ If you’re a hospital partner using a custom deployment, you may have specific 
 
 ---
 
-### 🧠 Ethical & Regulatory Considerations
+## 🧠 Ethical & Regulatory Considerations
 
 Rate limiting and strict parameter validation help ensure **traceability**, prevent **accidental misuse of data**, and support compliance with **healthcare data regulations** (e.g., GDPR, HIPAA).
 
 ---
 
-Need help? [Contact our support team](mailto:support@neolens.ai).
+Need help ? [Contact our support team](mailto:support@neolens.ai).

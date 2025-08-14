@@ -9,8 +9,6 @@ description: "Simple SDK examples for quick API access with Python, JavaScript, 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## SDK Examples
-
 Neolens provides simple and secure access to its REST API through standard HTTP requests. You can use any language or platform capable of making HTTPS requests. Below are a few quick examples using Python, JavaScript, and curl.
 
 <Tabs>

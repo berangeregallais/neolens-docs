@@ -16,6 +16,7 @@
  */
 const sidebars = {
   tutorialSidebar: [
+    'intro',
     'overview',
     {
       type: 'category',
@@ -36,7 +37,11 @@ const sidebars = {
       type: 'category',
       label: 'API Reference',
       items: [
-        'api-reference/endpoints',
+        {
+          type: 'link',
+          label: 'Interactive API (OpenAPI)',
+          href: '/api-reference/endpoints',
+        },
         'api-reference/request-parameters',
         'api-reference/response-formats',
         'api-reference/error-handling',
@@ -88,9 +93,9 @@ const sidebars = {
       ],
     },
     {
-      type: 'link',
-      label: 'API Reference',
-      href: '/api-reference/endpoints',
+      type: 'doc',
+      id: 'faq',
+      label: 'FAQ',
     },
     {
       type: 'doc',
@@ -101,7 +106,7 @@ const sidebars = {
       type: 'doc',
       id: 'changelog',
       label: 'Changelog',
-    },
+    }
   ],
 };
 

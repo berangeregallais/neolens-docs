@@ -4,13 +4,11 @@ title: Limitations of Neolens AI
 description: "An overview of Neolens AI’s known technical and clinical limitations, including model biases, lack of contextual understanding, and typical failure scenarios. Essential reading to set realistic expectations and ensure responsible use in medical workflows."
 ---
 
-## ⚠️ Limitations of Neolens AI
-
 > _While Neolens is a powerful medical imaging assistant, it has technical and practical limitations you must be aware of._
 
 ---
 
-### 🧪 1. Model Biases
+## 1. Model Biases
 
 - Trained on a curated dataset, Neolens may not generalize well to:
   - Pediatric patients
@@ -24,7 +22,7 @@ Always verify AI output on underrepresented populations.
 
 ---
 
-### 🕶️ 2. Lack of Context
+## 2. Lack of Context
 
 - Neolens processes images in isolation — it does **not** have access to:
   - Clinical history
@@ -34,7 +32,7 @@ Always verify AI output on underrepresented populations.
 
 ---
 
-### 🧩 3. Ambiguity in Findings
+## 3. Ambiguity in Findings
 
 - The model may highlight abnormalities without naming a diagnosis.
 - Some visual anomalies are flagged with low confidence.
@@ -42,7 +40,7 @@ Always verify AI output on underrepresented populations.
 
 ---
 
-### 🧠 4. No Clinical Reasoning
+## 4. No Clinical Reasoning
 
 - Neolens is **not a medical decision-maker.**
 - It does not reason, compare options, or make judgments.
@@ -50,7 +48,7 @@ Always verify AI output on underrepresented populations.
 
 ---
 
-### 🏥 5. Not a Standalone Tool
+## 5. Not a Standalone Tool
 
 - Neolens is designed for **assistance**, not automation.
 - It should never replace human review by a qualified specialist.
@@ -62,7 +60,7 @@ Use Neolens to support, not shortcut, your diagnostic workflow.
 
 ---
 
-### 🚧 6. Evolving System
+## 6. Evolving System
 
 - The AI is continuously updated.
 - Past behavior may differ from current behavior due to:
@@ -74,7 +72,7 @@ Keep your documentation and validations up to date with every major release.
 
 ---
 
-## ❌ Known Failure Examples
+## Known Failure Examples
 
 > _These examples illustrate typical scenarios where Neolens may produce suboptimal or incorrect results. They are not exhaustive, but aim to help you recognize edge cases._
 

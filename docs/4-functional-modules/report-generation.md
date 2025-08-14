@@ -4,19 +4,17 @@ title: Report Generation Module
 description: "Generates structured preliminary medical reports from analysis results to streamline diagnosis and documentation."
 ---
 
-## 📝 Report Generation
-
 The **Report Generation** module automatically creates preliminary diagnostic reports based on analysis results.
 
 ---
 
-### 🎯 Purpose
+## 🎯 Purpose
 
 Provide clinicians with structured, readable summaries to accelerate diagnosis and documentation.
 
 ---
 
-### 🧠 How It Works
+## 🔍 How It Works
 
 - Aggregates data from detection, classification, and measurement modules.
 - Uses natural language generation (NLG) tailored for medical contexts.
@@ -24,7 +22,7 @@ Provide clinicians with structured, readable summaries to accelerate diagnosis a
 
 ---
 
-### ⚙️ Key Parameters
+## ⚙️ Key Parameters
 
 | Parameter       | Type    | Description                                  | Default  |
 |-----------------|---------|----------------------------------------------|----------|
@@ -33,13 +31,15 @@ Provide clinicians with structured, readable summaries to accelerate diagnosis a
 | `include_images`| boolean | Whether to embed annotated images in report  | false    |
 
 :::tip  
-Customize templates to fit your clinical workflow and branding.  
-Enable `include_images` for richer, more informative reports.  
+
+- Customize templates to fit your clinical workflow and branding.  
+- Enable `include_images` for richer, more informative reports.  
+
 :::
 
 ---
 
-### 📦 Output Format
+## 📦 Output Format
 
 Sample JSON output:
 
@@ -54,7 +54,7 @@ Sample JSON output:
 
 ---
 
-### 🛠️ Usage Example
+## 🛠️ Usage Example
 
 ```bash
 curl -X POST "https://api.neolens.ai/v1/report-generation" \
@@ -67,7 +67,7 @@ curl -X POST "https://api.neolens.ai/v1/report-generation" \
 
 ---
 
-### ⚠️ Limitations
+## ⚠️ Limitations
 
 - Generated reports are preliminary and should be reviewed by specialists.
 - Language nuances may require manual adjustment.

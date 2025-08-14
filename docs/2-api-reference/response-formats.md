@@ -4,15 +4,13 @@ title: Response Formats
 description: "Structured response formats for seamless integration, clear error reporting, and AI-powered insights with Neolens API."
 ---
 
-## Response Formats
-
 Neolens API returns structured responses in various formats depending on the request type and client preference.
 
 The default format is `application/json`, but some endpoints also support `csv` and `xml` for compatibility and export purposes.
 
 ---
 
-### 📄 Default JSON Structure
+## 📄 Default JSON Structure
 
 All JSON responses follow a consistent structure:
 
@@ -37,16 +35,16 @@ All JSON responses follow a consistent structure:
 | `data`      | object | Payload of the response                       |
 | `meta`      | object | Technical metadata (e.g. request ID, version) |
 
-#### 🔍 `meta` Object Properties
+### 🔍 `meta` Object Properties
 
-| Property     | Type     | Description                                                                                                    |
-| ------------ | -------- | -------------------------------------------------------------------------------------------------------------- |
-| `request_id` | `string` | A unique UUID generated for each API call. Use it for debugging, tracing logs, or reporting issues to support. |
-| `version`    | `string` | API version used for the request, typically `"v1"` or `"v1.1"`. Helps ensure response schema consistency.      |
+| Property     | Type   | Description                                                                                                    |
+| ------------ | ------ | -------------------------------------------------------------------------------------------------------------- |
+| `request_id` | string | A unique UUID generated for each API call. Use it for debugging, tracing logs, or reporting issues to support. |
+| `version`    | string | API version used for the request, typically `"v1"` or `"v1.1"`. Helps ensure response schema consistency.      |
 
 ---
 
-### 🧪 Sample Response: Image Analysis
+## 🧪 Sample Response: Image Analysis
 
 ```json
 {
@@ -79,7 +77,7 @@ All JSON responses follow a consistent structure:
 
 ---
 
-### 🔁 Alternate Formats
+## 🔁 Alternate Formats
 
 Some endpoints support alternative formats, which you can request using the Accept header or a query parameter (`?format=`).
 
@@ -98,7 +96,7 @@ Accept: text/csv
 
 ---
 
-### ⚠️ Error Responses
+## ⚠️ Error Responses
 
 In case of failure, the API returns a standardized error structure:
 
@@ -126,7 +124,7 @@ In case of failure, the API returns a standardized error structure:
 
 Always check the status field before processing the data.
 
-- Use the request_id in logs or support tickets for traceability.
+- Use the `request_id` in logs or support tickets for traceability.
 - Prefer json format when integrating with front-end or mobile apps.
 - For CSV, ensure column order and encoding (UTF-8) are respected.
 
@@ -134,7 +132,7 @@ Always check the status field before processing the data.
 
 ---
 
-### 🧠 AI-Specific Notes
+## 🧠 AI-Specific Notes
 
 For endpoints returning AI predictions:
 
@@ -146,4 +144,4 @@ Always refer to the [Interpreting AI Output](../ai-insights/interpreting-results
 
 ---
 
-Need help? [Contact our support team](mailto:support@neolens.ai).
+Need help ? [Contact our support team](mailto:support@neolens.ai).

@@ -1,10 +1,10 @@
 ---
 slug: overview
-title: Neolens — Intelligent Medical Imaging API Overview
+title: Neolens — Intelligent Medical Imaging API
 description: "High-performance AI-powered medical imaging API for anomaly detection, classification, measurement, and clinical reporting."
 ---
 
-## Neolens — Intelligent Medical Imaging API Overview
+## Overview
 
 Neolens is a high-performance medical imaging analysis API leveraging advanced AI models to support clinical decision-making and healthcare workflows.
 

@@ -4,8 +4,6 @@ title: Interpreting AI Results
 description: "Quickly understand Neolens AI results—confidence levels, labels, and priorities—to use them safely and effectively in your clinical workflow. Stay aware of limitations and best practices to keep human judgment central."
 ---
 
-## 🔍 Interpreting AI Results
-
 > Understanding Neolens AI outputs is crucial for safe and effective clinical integration. This guide helps you interpret confidence scores, classifications, and recommendations appropriately.
 
 ---
@@ -306,15 +304,15 @@ Consider AI results alongside:
 
 ### False Positives
 
-- **Artifacts mistaken for pathology**
-- **Normal variants flagged as abnormal**
-- **Overlapping structures misidentified**
+- Artifacts mistaken for pathology
+- Normal variants flagged as abnormal
+- Overlapping structures misidentified
 
 ### False Negatives  
 
-- **Subtle findings missed**
-- **Atypical presentations**
-- **Poor image quality masking pathology**
+- Subtle findings missed
+- Atypical presentations
+- Poor image quality masking pathology
 
 ### Overreliance on AI
 

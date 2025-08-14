@@ -4,7 +4,7 @@ title: Performance Metrics & UX
 description: "Detailed overview of Neolens API performance metrics, benchmarks, user experience, optimization strategies, usage analytics, monitoring, and roadmap for continuous improvement."
 ---
 
-## 📊 Performance Metrics & User Experience
+import MermaidZoomWrapper from '@site/src/components/MermaidZoomWrapper';
 
 > Monitoring performance and user experience is crucial for maintaining high-quality API service. This section covers key metrics, benchmarks, and optimization guidelines.
 
@@ -26,6 +26,10 @@ Time-to-First-Success measures how quickly a new user can complete their first s
 
 ### TTFS Breakdown
 
+<div className="mermaid-container">
+
+<MermaidZoomWrapper>
+
 ```mermaid
 gantt
     title Time-to-First-Success Journey
@@ -45,6 +49,10 @@ gantt
     Get Valid Response   :600, 720
     Understand Results   :660, 780
 ```
+
+</MermaidZoomWrapper>
+
+</div>
 
 ### Optimization Strategies
 
@@ -368,19 +376,19 @@ alerts:
 
 ### Q3 2025 Goals
 
-- [ ] Reduce TTFS by 25% for new users
-- [ ] Achieve < 5s average response time for all endpoints
-- [ ] Implement advanced caching (Redis cluster)
-- [ ] Launch mobile-optimized documentation
-- [ ] Add real-time performance dashboard
+- Reduce TTFS by 25% for new users
+- Achieve < 5s average response time for all endpoints
+- Implement advanced caching (Redis cluster)
+- Launch mobile-optimized documentation
+- Add real-time performance dashboard
 
 ### Q4 2025 Goals
 
-- [ ] Edge computing deployment (reduce latency by 40%)
-- [ ] Advanced image preprocessing pipeline
-- [ ] Predictive scaling based on usage patterns
-- [ ] GraphQL API for optimized queries
-- [ ] Performance budget monitoring
+- Edge computing deployment (reduce latency by 40%)
+- Advanced image preprocessing pipeline
+- Predictive scaling based on usage patterns
+- GraphQL API for optimized queries
+- Performance budget monitoring
 
 ---
 

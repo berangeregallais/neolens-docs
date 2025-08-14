@@ -4,8 +4,6 @@ title: Glossary
 description: 'Key terms and definitions related to medical imaging AI, healthcare IT standards, and technical concepts used in Neolens.'
 ---
 
-## 📚 Glossary
-
 A concise reference of key terms used throughout the Neolens documentation.
 
 ---

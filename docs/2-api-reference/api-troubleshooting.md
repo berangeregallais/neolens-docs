@@ -4,29 +4,27 @@ title: API Troubleshooting
 description: "Comprehensive guide to diagnosing and handling common API errors in Neolens, including status codes, example payloads, client-side handling, and troubleshooting tips."
 ---
 
-## API Troubleshooting
-
 This guide helps you diagnose and fix common issues when interacting with the Neolens API.
 
 ---
 
-### 🧾 Common Error Responses
+## 🧾 Common Error Responses
 
 > Below is a summary table of the most frequent HTTP errors and how to resolve them.
 
-| HTTP Status               | Description                          | Typical Causes                          | Recommended Actions                                          |
-|---------------------------|--------------------------------------|-----------------------------------------|--------------------------------------------------------------|
-| 400 Bad Request           | Invalid request syntax or parameters | Malformed JSON, missing required fields | Validate request payload and schema                          |
-| 401 Unauthorized          | Authentication failure               | Missing/invalid API key or token        | Check authentication headers and token                       |
-| 403 Forbidden             | Permission denied                    | Insufficient scopes or roles            | Verify API key permissions and scopes                        |
-| 404 Not Found             | Resource does not exist              | Wrong endpoint or resource ID           | Confirm URL and resource identifiers                         |
-| 409 Conflict              | Conflict with current state          | Duplicate resource or conflicting data  | Check request data and retry if needed                       |
-| 429 Too Many Requests     | Rate limit exceeded                  | Too many requests in a given timeframe  | Implement retry logic with exponential backoff               |
-| 500 Internal Server Error | Server failure                       | Temporary server issues, edge-case bugs | Retry later; contact support with `request_id` if persistent |
+| HTTP Status                 | Description                          | Typical Causes                          | Recommended Actions                                          |
+|-----------------------------|--------------------------------------|-----------------------------------------|--------------------------------------------------------------|
+| `400 Bad Request`           | Invalid request syntax or parameters | Malformed JSON, missing required fields | Validate request payload and schema                          |
+| `401 Unauthorized`          | Authentication failure               | Missing/invalid API key or token        | Check authentication headers and token                       |
+| `403 Forbidden`             | Permission denied                    | Insufficient scopes or roles            | Verify API key permissions and scopes                        |
+| `404 Not Found`             | Resource does not exist              | Wrong endpoint or resource ID           | Confirm URL and resource identifiers                         |
+| `409 Conflict`              | Conflict with current state          | Duplicate resource or conflicting data  | Check request data and retry if needed                       |
+| `429 Too Many Requests`     | Rate limit exceeded                  | Too many requests in a given timeframe  | Implement retry logic with exponential backoff               |
+| `500 Internal Server Error` | Server failure                       | Temporary server issues, edge-case bugs | Retry later; contact support with `request_id` if persistent |
 
 ---
 
-### 🧪 Example Error Payloads
+## 🧪 Example Error Payloads
 
 ```json
 {
@@ -75,7 +73,7 @@ This guide helps you diagnose and fix common issues when interacting with the Ne
 
 ---
 
-### 🧑‍💻 Handling Errors on the Client Side
+## 🧑‍💻 Handling Errors on the Client Side
 
 Here are examples of robust error handling in both Python and JavaScript:
 
@@ -110,7 +108,7 @@ fetch("https://api.neolens.ai/v1/analyze", {
 
 ---
 
-### 🔗 Helpful Links
+## 🔗 Helpful Links
 
 - [Authentication & API Keys](../getting-started/authentication)
 - [Rate Limiting](../getting-started/rate-limiting)
@@ -118,7 +116,7 @@ fetch("https://api.neolens.ai/v1/analyze", {
 
 ---
 
-### 📋 Understanding Custom Error Codes
+## 📋 Understanding Custom Error Codes
 
 > The following table explains optional fields you may find in error responses.
 
@@ -132,11 +130,11 @@ fetch("https://api.neolens.ai/v1/analyze", {
 
 ---
 
-### 🛠️ Troubleshooting Tips
+## 🛠️ Troubleshooting Tips
 
-:::warning ⚠️
+:::warning
 
-Why do I get `429 Too Many Requests` when I’m sending few requests?
+Why do I get `429 Too Many Requests` when I’m sending few requests ?
 Rate limits are enforced per API key and per IP.
 
 Bursts of requests or parallel calls can trigger limits.
@@ -145,9 +143,9 @@ Use exponential backoff and monitor usage.
 
 :::
 
-::note 📝
+:::note
 
-How to handle `401 Unauthorized` errors?
+How to handle `401 Unauthorized` errors ?
 Verify your API key is valid and included correctly.
 
 Check if the token expired or was revoked.
@@ -156,9 +154,9 @@ Confirm you have the necessary scopes.
 
 :::
 
-:::tip ✅
+:::tip
 
-What to do if `400 Bad Request` errors occur?
+What to do if `400 Bad Request` errors occur ?
 Double-check JSON syntax and required fields.
 
 Validate parameter types and values.
@@ -169,7 +167,7 @@ Review API reference for correct usage.
 
 ---
 
-### 🧑‍💼 Need Help?
+## 🧑‍💼 Need Help ?
 
 If you can’t resolve an issue:
 

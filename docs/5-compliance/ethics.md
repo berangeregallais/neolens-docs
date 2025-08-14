@@ -4,13 +4,11 @@ title: Ethics and Compliance
 description: "Defines the regulatory, ethical, and traceability principles guiding safe and trustworthy medical AI use."
 ---
 
-## ⚖️ Ethics and Compliance
-
 The **Compliance** section outlines regulatory requirements, ethical considerations, and traceability essential for medical AI applications like Neolens.
 
 ---
 
-### 📜 Regulatory Framework
+## 📜 Regulatory Framework
 
 Neolens adheres to:
 
@@ -20,7 +18,7 @@ Neolens adheres to:
 
 ---
 
-### 🔒 Data Privacy (GDPR)
+## 🔒 Data Privacy (GDPR)
 
 - Patient data is anonymized and encrypted.
 - Data processing consent is mandatory.
@@ -28,19 +26,15 @@ Neolens adheres to:
 
 ---
 
-### 🤖 Ethical AI Use
+## 🤖 Ethical AI Use
 
 - Transparency in AI decision-making.
 - Mitigation of biases and fairness monitoring.
 - Clear communication of AI limitations to users.
 
-:::tip  
-Ethics isn’t just compliance — it’s building trust.  
-:::
-
 ---
 
-### 📊 Traceability and Auditability
+## 📊 Traceability and Auditability
 
 - All API calls and model outputs are logged securely.
 - Enables post-hoc review and error investigation.
@@ -48,14 +42,12 @@ Ethics isn’t just compliance — it’s building trust.
 
 ---
 
-### 🧩 Responsibility
+## 🧩 Responsibility
 
 - AI assists but does **not** replace clinical judgment.
 - Final decisions rest with qualified healthcare professionals.
 
 ---
-
-## ⚠️ Warnings
 
 :::warning  
 Use Neolens responsibly, respecting ethical and legal boundaries.  

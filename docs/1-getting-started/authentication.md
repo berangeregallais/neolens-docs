@@ -4,11 +4,9 @@ title: Authentication
 description: 'Secure your Neolens API requests with API key authentication, role-based access control, and best practices for key management.'
 ---
 
-## Authentication
-
 All requests to the **Neolens API** require authentication via an API key. This ensures secure access and usage tracking of the service.
 
-### 🔑 Obtaining an API Key
+## 🔑 Obtaining an API Key
 
 To authenticate, you must include your personal API key in the request header.
 Your API key is available from your Neolens Developer Dashboard once your account is created and verified.
@@ -23,7 +21,7 @@ neolens_live_abcd1234efgh5678ijkl9012
 
 ---
 
-### 🔍 Header-Based Authentication
+## 🔍 Header-Based Authentication
 
 Include your API key in the `Authorization` header of every request using the Bearer token scheme:
 
@@ -35,14 +33,14 @@ Authorization: Bearer neolens_live_abcd1234efgh5678ijkl9012
 
 ---
 
-### 🔁 Key Rotation
+## 🔁 Key Rotation
 
 You can rotate your API keys at any time from the dashboard.
 Old keys will remain valid for 24 hours after regeneration to allow a safe transition.
 
 ---
 
-### 🚫 Handling Invalid or Missing Keys
+## 🚫 Handling Invalid or Missing Keys
 
 If an API request is made without a valid key, the server will return a `401 Unauthorized` error:
 
@@ -61,12 +59,12 @@ Make sure to:
 
 ---
 
-### 🔐 Role-Based Access & Scopes
+## 🔐 Role-Based Access & Scopes
 
 The Neolens API supports **role-based access control (RBAC)** to ensure users and systems can only access data and functionality appropriate to their role.
 Each API key is associated with a **role** and a set of **scopes** that define what endpoints can be accessed and what operations are allowed.
 
-#### 🔸 Available Roles & Scopes
+### 🔸 Available Roles & Scopes
 
 | Role            | Description                                                                | Example Scopes                |
 | --------------- | -------------------------------------------------------------------------- | ----------------------------- |
@@ -96,7 +94,7 @@ Example response:
 
 > Note: If you attempt to access an endpoint outside of your scope, the API will return a `403 Forbidden` response.
 
-##### 🚫 Example: Access Denied for Insufficient Permissions
+#### 🚫 Example: Access Denied for Insufficient Permissions
 
 Suppose a user with the role `radiologist` (scopes: `read:scans`, `read:reports`) attempts to perform a write operation on scan data, which requires the `write:scans` scope.
 

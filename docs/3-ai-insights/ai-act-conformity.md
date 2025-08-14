@@ -4,15 +4,13 @@ title: Conformity with AI Act – Annex IV
 description: "Detailed mapping of Neolens documentation to the requirements of Annex IV of the EU Artificial Intelligence Act (AI Act) for high-risk AI systems, demonstrating regulatory compliance through comprehensive technical documentation."
 ---
 
-## Conformity with the AI Act (Annex IV)
-
 This page outlines how the Neolens documentation fulfills the requirements set forth in **Annex IV** of the **EU Artificial Intelligence Act (AI Act)** regarding the technical documentation for high-risk AI systems.
 
 Each section of Annex IV is mapped below to its corresponding documentation area.
 
 ---
 
-### 1. General Description of the AI System
+## 1. General Description of the AI System
 
 **Requirement:**  
 A general description of the AI system, its intended purpose, and the system's overall logic.
@@ -24,7 +22,7 @@ A general description of the AI system, its intended purpose, and the system's o
 
 ---
 
-### 2. System Development and Training
+## 2. System Development and Training
 
 **Requirement:**  
 Information about the development process, training data sources, and data governance.
@@ -37,7 +35,7 @@ Information about the development process, training data sources, and data gover
 
 ---
 
-### 3. Technical Parameters and Configurability
+## 3. Technical Parameters and Configurability
 
 **Requirement:**  
 A detailed description of the system’s configuration, settings, and limits.
@@ -49,7 +47,7 @@ A detailed description of the system’s configuration, settings, and limits.
 
 ---
 
-### 4. Human Oversight Measures
+## 4. Human Oversight Measures
 
 **Requirement:**  
 Details of how human oversight is ensured during AI usage.
@@ -61,7 +59,7 @@ Details of how human oversight is ensured during AI usage.
 
 ---
 
-### 5. System Performance and Accuracy
+## 5. System Performance and Accuracy
 
 **Requirement:**  
 Information on accuracy, robustness, and cybersecurity resilience.
@@ -74,7 +72,7 @@ Information on accuracy, robustness, and cybersecurity resilience.
 
 ---
 
-### 6. Risk Management and Compliance
+## 6. Risk Management and Compliance
 
 **Requirement:**  
 Details of the measures taken to comply with obligations under the AI Act.
@@ -86,7 +84,7 @@ Details of the measures taken to comply with obligations under the AI Act.
 
 ---
 
-### 7. Record-Keeping and Traceability
+## 7. Record-Keeping and Traceability
 
 **Requirement:**  
 Mechanisms for logging, traceability, and version control.
@@ -98,7 +96,7 @@ Mechanisms for logging, traceability, and version control.
 
 ---
 
-### 8. Post-Market Monitoring
+## 8. Post-Market Monitoring
 
 **Requirement:**  
 Plans and mechanisms to monitor the system after deployment.

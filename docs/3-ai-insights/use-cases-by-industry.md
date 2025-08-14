@@ -4,13 +4,11 @@ title: AI Use Cases by Industry
 description: "Discover how Neolens AI empowers diverse industries—from healthcare to research, operations, and public health—with actionable imaging insights that boost efficiency, accuracy, and compliance."
 ---
 
-## 🧪 AI Use Cases by Industry
-
 > _Explore how Neolens fits into real-world workflows across sectors._
 
 ---
 
-### 🏥 Healthcare & Radiology
+## 🏥 Healthcare & Radiology
 
 | Application                        | Description                                              | Benefit                             |
 |------------------------------------|----------------------------------------------------------|-------------------------------------|
@@ -18,13 +16,13 @@ description: "Discover how Neolens AI empowers diverse industries—from healthc
 | Longitudinal tracking              | Compare anatomical changes over time                     | Improved follow-up accuracy         |
 | Workflow automation (PACS/RIS)     | Pre-fill reports, sort studies by urgency                | Radiologist productivity boost      |
 
-:::tip[Did you know?]
+:::tip[Did you know ?]
 Neolens integrates seamlessly with most DICOM-based systems and HL7 pipelines.
 :::
 
 ---
 
-### 🧬 Research & Academia
+## 🧬 Research & Academia
 
 | Application                        | Description                                           | Benefit                          |
 |------------------------------------|-------------------------------------------------------|----------------------------------|
@@ -34,7 +32,7 @@ Neolens integrates seamlessly with most DICOM-based systems and HL7 pipelines.
 
 ---
 
-### 🏢 Hospital IT & Operations
+## 🏢 Hospital IT & Operations
 
 | Application                        | Description                                         | Benefit                          |
 |------------------------------------|-----------------------------------------------------|----------------------------------|
@@ -48,7 +46,7 @@ Neolens logs are structured for auditability and align with ISO/IEC 27001.
 
 ---
 
-### 🏛️ Public Health & Policy
+## 🏛️ Public Health & Policy
 
 | Application                        | Description                                         | Benefit                          |
 |------------------------------------|-----------------------------------------------------|----------------------------------|
@@ -57,7 +55,7 @@ Neolens logs are structured for auditability and align with ISO/IEC 27001.
 
 ---
 
-### 📱 Medical Device Manufacturers
+## 📱 Medical Device Manufacturers
 
 | Application                        | Description                                         | Benefit                          |
 |------------------------------------|-----------------------------------------------------|----------------------------------|
@@ -66,7 +64,7 @@ Neolens logs are structured for auditability and align with ISO/IEC 27001.
 
 ---
 
-### 🧠 Mental Health & Neurology (R&D)
+## 🧠 Mental Health & Neurology (R&D)
 
 | Application                        | Description                                         | Benefit                          |
 |------------------------------------|-----------------------------------------------------|----------------------------------|

@@ -4,13 +4,11 @@ title: Error Handling
 description: "Comprehensive guide to handling errors in Neolens API, including HTTP status codes, error formats, AI-specific issues, rate limiting, and best practices for robust client-side error management."
 ---
 
-## Error Handling
-
 Neolens API uses standard HTTP status codes to indicate the success or failure of an API request. In case of errors, the response body contains detailed information to help you diagnose and fix issues efficiently.
 
 ---
 
-### Common HTTP Status Codes
+## Common HTTP Status Codes
 
 | Status Code | Meaning                 | Description                                    |
 |-------------|-------------------------|------------------------------------------------|
@@ -25,7 +23,7 @@ Neolens API uses standard HTTP status codes to indicate the success or failure o
 
 ---
 
-### Error Response Format
+## Error Response Format
 
 Error responses follow a standard JSON structure:
 
@@ -49,7 +47,7 @@ Error responses follow a standard JSON structure:
 
 ---
 
-### Handling AI-Specific Errors
+## Handling AI-Specific Errors
 
 Certain errors are specific to AI model processing:
 
@@ -61,7 +59,7 @@ When receiving AI-specific errors, try re-submitting the request with corrected 
 
 ---
 
-### Rate Limiting and 429 Errors
+## Rate Limiting and 429 Errors
 
 The API enforces rate limits to protect system stability.
 
@@ -84,4 +82,4 @@ If you receive a `429 Too Many Requests` response:
 
 ---
 
-Need help? [Contact our support team](mailto:support@neolens.ai).
+Need help ? [Contact our support team](mailto:support@neolens.ai).

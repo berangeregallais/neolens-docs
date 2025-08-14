@@ -4,13 +4,11 @@ title: Export Formats
 description: "Supports multiple export formats, enabling seamless integration, reporting, and clinical documentation."
 ---
 
-## 💾 Export Formats
-
 Neolens supports multiple export formats to facilitate integration and reporting across clinical systems.
 
 ---
 
-### 📁 Supported Formats
+## 📁 Supported Formats
 
 | Format      | Description                                   | Use Case                   |
 |-------------|-----------------------------------------------|----------------------------|
@@ -21,7 +19,7 @@ Neolens supports multiple export formats to facilitate integration and reporting
 
 ---
 
-### ⚙️ Export Options
+## ⚙️ Export Options
 
 - Choose output format via `format` parameter.
 - Include annotated images with `include_images` flag.
@@ -29,7 +27,7 @@ Neolens supports multiple export formats to facilitate integration and reporting
 
 ---
 
-### 🛠️ Usage Example
+## 🛠️ Usage Example
 
 ```bash
 curl -X GET "https://api.neolens.ai/v1/export?analysis_id=ANL123456&format=pdf&include_images=true" \
@@ -38,7 +36,7 @@ curl -X GET "https://api.neolens.ai/v1/export?analysis_id=ANL123456&format=pdf&i
 
 ---
 
-### ⚠️ Limitations
+## ⚠️ Limitations
 
 - Large image embeddings may increase file size significantly.
 - Some formats require additional processing on the client side.

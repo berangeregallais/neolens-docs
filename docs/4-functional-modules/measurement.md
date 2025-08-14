@@ -4,19 +4,17 @@ title: Anatomical Measurement Module
 description: "Automatically extracts precise anatomical dimensions from medical images to support diagnosis, treatment planning, and monitoring."
 ---
 
-## 📏 Anatomical Measurement
-
 The **Measurement** module automatically calculates dimensions of anatomical structures from medical images.
 
 ---
 
-### 🎯 Purpose
+## 🎯 Purpose
 
 Provide precise, reproducible measurements to assist clinical assessment and monitoring.
 
 ---
 
-### 🧠 How It Works
+## 🔍 How It Works
 
 - Utilizes image segmentation and edge detection algorithms.
 - Identifies key anatomical landmarks.
@@ -24,7 +22,7 @@ Provide precise, reproducible measurements to assist clinical assessment and mon
 
 ---
 
-### ⚙️ Key Parameters
+## ⚙️ Key Parameters
 
 | Parameter          | Type    | Description                                   | Default   |
 |--------------------|---------|-----------------------------------------------|-----------|
@@ -33,13 +31,15 @@ Provide precise, reproducible measurements to assist clinical assessment and mon
 | `unit`             | string  | Unit of measurement: `mm`, `cm`               | `mm`      |
 
 :::tip  
-Ensure images have sufficient resolution for accurate measurement.  
-Adjust `structure` parameter carefully to match clinical needs.  
+
+- Ensure images have sufficient resolution for accurate measurement.  
+- Adjust `structure` parameter carefully to match clinical needs.  
+
 :::
 
 ---
 
-### 📦 Output Format
+## 📦 Output Format
 
 Example output:
 
@@ -54,7 +54,7 @@ Example output:
 
 ---
 
-### 🛠️ Usage Example
+## 🛠️ Usage Example
 
 ```bash
 curl -X POST "https://api.neolens.ai/v1/measurement" \
@@ -67,7 +67,7 @@ curl -X POST "https://api.neolens.ai/v1/measurement" \
 
 ---
 
-### ⚠️ Limitations
+## ⚠️ Limitations
 
 - Accuracy depends on image quality and modality.
 - Complex shapes may require manual review.

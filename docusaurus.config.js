@@ -11,7 +11,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Neolens API Documentation',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/neolens-ai-favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -19,13 +19,17 @@ const config = {
   },
 
   url: 'https://berangeregallais.github.io',
-  baseUrl: '/neolens/',
+  baseUrl: '/neolens-docs/',
   organizationName: 'berangeregallais',
   projectName: 'neolens-docs',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
+
+  stylesheets: [
+    'static/css/prism-overrides.css',
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -35,12 +39,18 @@ const config = {
     locales: ['en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           lastVersion: 'current',
@@ -73,23 +83,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Neolens AI Documentation',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Neolens AI Logo',
+          src: 'img/neolens-ai-logo.svg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/berangeregallais/neolens-docs',
             label: 'GitHub',
             position: 'right',
           },

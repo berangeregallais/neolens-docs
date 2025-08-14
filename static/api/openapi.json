@@ -1,117 +1,198 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Neolens API",
+    "title": "Neolens API Demo",
     "version": "1.0.0",
-    "description": "Fictional API for intelligent medical image analysis. For documentation demo purposes only."
+    "description": "Mock API for Neolens portfolio demo with 3 endpoints on Beeceptor."
   },
   "servers": [
     {
-      "url": "https://neolens-demo.free.beeceptor.com",
-      "description": "Mock API Server (Beeceptor)"
+      "url": "https://neolens-api-demo.beeceptor.com",
+      "description": "Beeceptor Mock Server"
+    }
+  ],
+  "security": [
+    {
+      "ApiKeyAuth": []
     }
   ],
   "paths": {
-    "/analyze": {
-      "post": {
-        "summary": "Analyze a medical image",
-        "description": "Uploads a DICOM or PNG medical image and returns AI-generated analysis results.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "image": {
-                    "type": "string",
-                    "format": "binary",
-                    "description": "Medical image file (DICOM, PNG, JPG)"
-                  },
-                  "confidenceThreshold": {
-                    "type": "number",
-                    "format": "float",
-                    "default": 0.8,
-                    "description": "Minimum confidence score to return a result"
-                  }
-                },
-                "required": ["image"]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Analysis results returned successfully",
-            "content": {
-              "application/json": {
-                "example": {
-                  "timestamp": "2025-07-22T14:30:00Z",
-                  "patientId": "P-123456",
-                  "findings": [
-                    {
-                      "label": "Pulmonary Nodule",
-                      "confidence": 0.92,
-                      "location": "left upper lobe",
-                      "priority": "high"
-                    },
-                    {
-                      "label": "Pleural Effusion",
-                      "confidence": 0.81,
-                      "location": "right lung base",
-                      "priority": "medium"
-                    }
-                  ],
-                  "recommendation": "Suggest CT follow-up within 7 days.",
-                  "modelVersion": "v3.2.1"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Invalid request"
-          },
-          "500": {
-            "description": "Internal server error"
-          }
-        }
-      }
-    },
-    "/v1/images/{id}": {
+    "/patients/{id}": {
       "get": {
-        "summary": "Retrieve uploaded image metadata",
-        "description": "Returns metadata for an uploaded medical image.",
+        "tags": ["Patients"],
+        "summary": "Get patient information",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Patient identifier",
             "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "description": "Unique image identifier"
+            "schema": { "type": "string" }
           }
         ],
         "responses": {
           "200": {
-            "description": "Image metadata returned successfully",
+            "description": "Patient found",
             "content": {
               "application/json": {
-                "example": {
-                  "id": "IMG-987654",
-                  "uploadedAt": "2025-07-20T09:15:00Z",
-                  "format": "DICOM",
-                  "sizeKB": 5120,
-                  "dimensions": "1024x1024",
-                  "modality": "CT",
-                  "patientId": "P-123456"
-                }
+                "schema": { "$ref": "#/components/schemas/Patient" }
               }
             }
           },
           "404": {
-            "description": "Image not found"
+            "description": "Patient not found",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
           }
+        }
+      }
+    },
+    "/analysis": {
+      "post": {
+        "tags": ["Analysis"],
+        "summary": "Start AI analysis on medical image",
+        "requestBody": {
+          "description": "Analysis request data",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/AnalysisRequest" }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Analysis started",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "analysis_id": { "type": "string", "example": "98765" },
+                    "status": { "type": "string", "example": "processing" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/analysis/{id}": {
+      "get": {
+        "tags": ["Analysis"],
+        "summary": "Get AI analysis results",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Analysis identifier",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Analysis completed",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/AnalysisResult" }
+              }
+            }
+          },
+          "404": {
+            "description": "Analysis not found",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key",
+        "description": "API key for authentication"
+      }
+    },
+    "schemas": {
+      "Patient": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "example": "12345" },
+          "name": { "type": "string", "example": "John Doe" },
+          "dob": { "type": "string", "format": "date", "example": "1985-06-12" },
+          "gender": { "type": "string", "example": "male" }
+        }
+      },
+      "AnalysisRequest": {
+        "type": "object",
+        "properties": {
+          "timestamp": { "type": "string", "format": "date-time", "example": "2025-07-22T14:30:00Z" },
+          "patientId": { "type": "string", "example": "P-123456" },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": { "type": "string", "example": "Pulmonary Nodule" },
+                "confidence": { "type": "number", "example": 0.92 },
+                "location": { "type": "string", "example": "left upper lobe" },
+                "priority": { "type": "string", "example": "high" }
+              }
+            }
+          },
+          "recommendation": { "type": "string", "example": "Suggest CT follow-up within 7 days." },
+          "modelVersion": { "type": "string", "example": "v3.2.1" }
+        },
+        "required": ["timestamp", "patientId", "findings"],
+        "example": {
+          "timestamp": "2025-07-22T14:30:00Z",
+          "patientId": "P-123456",
+          "findings": [
+            {
+              "label": "Pulmonary Nodule",
+              "confidence": 0.92,
+              "location": "left upper lobe",
+              "priority": "high"
+            }
+          ],
+          "recommendation": "Suggest CT follow-up within 7 days.",
+          "modelVersion": "v3.2.1"
+        }
+      },
+      "AnalysisResult": {
+        "type": "object",
+        "properties": {
+          "analysis_id": { "type": "string", "example": "98765" },
+          "status": { "type": "string", "example": "completed" },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "region": { "type": "string", "example": "left temporal lobe" },
+                "anomaly": { "type": "string", "example": "glioblastoma" },
+                "confidence": { "type": "number", "example": 0.94 }
+              }
+            }
+          },
+          "report_url": { "type": "string", "example": "https://example.com/reports/98765.pdf" }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": { "type": "string", "example": "Resource not found" }
         }
       }
     }

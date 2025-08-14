@@ -4,13 +4,11 @@ title: Traceability and Auditability
 description: "Provides secure logging and audit trails to ensure clinical accountability and regulatory compliance."
 ---
 
-## 📋 Traceability and Auditability
-
 Ensuring full traceability of all AI interactions is critical for clinical accountability and regulatory compliance.
 
 ---
 
-### 🔎 What Is Traceability?
+## 🔎 What Is Traceability ?
 
 Traceability means logging and storing detailed records of:
 
@@ -21,7 +19,7 @@ Traceability means logging and storing detailed records of:
 
 ---
 
-### 🗃️ Logging and Storage
+## 🗃️ Logging and Storage
 
 - Logs are securely stored and encrypted.
 - Retention periods comply with legal and institutional policies.
@@ -29,7 +27,7 @@ Traceability means logging and storing detailed records of:
 
 ---
 
-### 🧾 Audit Trails
+## 🧾 Audit Trails
 
 - Enables retrospective analysis of clinical decisions aided by AI.
 - Facilitates investigations in case of adverse events.
@@ -37,14 +35,14 @@ Traceability means logging and storing detailed records of:
 
 ---
 
-### 🔐 Security Measures
+## 🔐 Security Measures
 
 - Role-based access controls (RBAC) protect sensitive logs.
 - Continuous monitoring detects unauthorized access attempts.
 
 ---
 
-### 📈 Benefits
+## 📈 Benefits
 
 - Enhances trust in AI-assisted diagnostics.
 - Protects institutions from legal risks.

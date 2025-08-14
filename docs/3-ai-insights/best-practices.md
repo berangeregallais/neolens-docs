@@ -4,13 +4,11 @@ title: Best Practices for Using Neolens AI
 description: "Discover essential best practices to use Neolens AI safely and effectively. This guide covers model understanding, validation, responsible configuration, continuous monitoring, purposeful integration, clear communication, and regulatory compliance—empowering you to maximize AI benefits while managing risks."
 ---
 
-## ✅ Best Practices for Using Neolens AI
-
 > _Use Neolens safely, effectively, and meaningfully by following these best practices._
 
 ---
 
-### 🧠 1. Understand Your Model
+## 💡 1. Understand Your Model
 
 - Know which version of the model is deployed (check `model_id` in metadata).
 - Be aware of its training scope (e.g., adult vs pediatric data).
@@ -22,7 +20,7 @@ Use the `/model/info` endpoint to retrieve current version details and changelog
 
 ---
 
-### 🔬 2. Validate in Context
+## 🔬 2. Validate in Context
 
 - Always validate AI outputs with domain experts.
 - Compare with prior studies and clinical records.
@@ -34,7 +32,7 @@ Never use Neolens in clinical decision-making **without human oversight.**
 
 ---
 
-### ⚙️ 3. Configure Responsibly
+## ⚙️ 3. Configure Responsibly
 
 - Tune thresholds and filters to reduce false positives in your workflow.
 - Document all configuration changes (e.g., `min_confidence: 0.85`).
@@ -42,7 +40,7 @@ Never use Neolens in clinical decision-making **without human oversight.**
 
 ---
 
-### 🔄 4. Monitor Continuously
+## 🔄 4. Monitor Continuously
 
 - Set up logging and feedback collection loops.
 - Track user edits vs. AI suggestions to detect drift or mismatch.
@@ -50,7 +48,7 @@ Never use Neolens in clinical decision-making **without human oversight.**
 
 ---
 
-### 🛠️ 5. Integrate with Purpose
+## 🛠️ 5. Integrate with Purpose
 
 - Only automate where AI confidence is consistently high.
 - Avoid “black box” integrations — always allow result inspection.
@@ -58,7 +56,7 @@ Never use Neolens in clinical decision-making **without human oversight.**
 
 ---
 
-### 🤝 6. Communicate Clearly
+## 🤝 6. Communicate Clearly
 
 - Label AI-generated insights in UIs and reports.
 - Inform patients and staff when AI is used in diagnosis or triage.
@@ -66,7 +64,7 @@ Never use Neolens in clinical decision-making **without human oversight.**
 
 ---
 
-### 📊 7. Stay Compliant
+## 📊 7. Stay Compliant
 
 - Align usage with your local data protection laws (e.g., GDPR, HIPAA).
 - Apply RBAC for sensitive endpoints.

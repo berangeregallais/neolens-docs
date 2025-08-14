@@ -4,8 +4,6 @@ title: Hospital Systems Integration
 description: "Supports various export formats for seamless integration and clinical reporting."
 ---
 
-## 🏥 Hospital Systems Integration
-
 > Seamlessly integrate Neolens AI into your existing healthcare IT infrastructure with support for PACS, RIS, EHR, and other critical hospital systems.
 
 ---
@@ -120,7 +118,7 @@ hl7_integration:
 
 #### Sample HL7 ORU Message (AI Results)
 
-```hl7
+```plaintext
 MSH|^~\&|NEOLENS|AI_ENGINE|RIS|HOSPITAL|20250805143022||ORU^R01|12345|P|2.5.1
 PID|1||123456789^^^HOSPITAL^MR||DOE^JOHN^||19850315|M|||123 Main St^^City^ST^12345
 OBR|1||AI_20250805_001|CT^Computed Tomography|20250805143022||||||||||||20250805143522|||F

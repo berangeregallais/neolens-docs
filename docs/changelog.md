@@ -4,8 +4,6 @@ title: Changelog
 description: 'Track the latest updates, enhancements, and fixes in the Neolens API documentation to stay informed about improvements and new features.'
 ---
 
-## Changelog
-
 Below is a summary of major changes, improvements, and fixes to the Neolens API documentation. This changelog helps users track the evolution of the documentation and the product itself.
 
 ### [1.0.0] - 2025-08-05

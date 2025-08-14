@@ -4,23 +4,21 @@ title: Quickstart Guide
 description: "Quickstart guide to rapidly integrate Neolens API for secure, efficient medical image analysis using authentication and the /analyze endpoint."
 ---
 
-## Quickstart Guide
-
 This guide will help you get started with the **Neolens API** in just a few steps.
 
-### Prerequisites
+## Prerequisites
 
 - Valid API key (see [Authentication](authentication.md) section)  
 - Supported medical image formats: DICOM, PNG, JPG  
 - Basic knowledge of REST API concepts and HTTP methods
 
-### Base URL
+## Base URL
 
 ```bash
 https://api.neolens.health/v1
 ```
 
-### Authentication
+## Authentication
 
 All requests require an `Authorization` header with your API key:
 
@@ -28,11 +26,11 @@ All requests require an `Authorization` header with your API key:
 Authorization: Bearer YOUR_API_KEY
 ```
 
-#### Example: Analyze a medical image
+### Example: Analyze a medical image
 
 Use the `/analyze` endpoint to submit a medical image for AI analysis.
 
-##### Request (cURL example)
+#### Request (cURL example)
 
 ```bash
 curl -X POST "https://api.neolens.health/v1/analyze" \
@@ -41,7 +39,7 @@ curl -X POST "https://api.neolens.health/v1/analyze" \
   -F "confidenceThreshold=0.85"
 ```
 
-##### Successful Response
+#### Successful Response
 
 ```json
 {
@@ -60,7 +58,7 @@ curl -X POST "https://api.neolens.health/v1/analyze" \
 }
 ```
 
-###### Response Fields
+##### Response Fields
 
 | Field                   | Type   | Description                                              |
 | ----------------------- | ------ | -------------------------------------------------------- |

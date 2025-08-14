@@ -4,19 +4,17 @@ title: Uncertainty Estimation Module
 description: "Quantifies prediction confidence to help clinicians assess the reliability of AI-generated results and prioritize expert review."
 ---
 
-## 🔎 Uncertainty Estimation
-
 The **Uncertainty Estimation** module quantifies the confidence level of AI-generated predictions to inform clinical decision-making.
 
 ---
 
-### 🎯 Purpose
+## 🎯 Purpose
 
 Help clinicians gauge reliability of detected anomalies and classifications, reducing risk of misinterpretation.
 
 ---
 
-### 🧠 How It Works
+## 🔍 How It Works
 
 - Uses probabilistic modeling and Bayesian inference techniques.
 - Provides confidence intervals, predictive distributions, or entropy measures.
@@ -24,7 +22,7 @@ Help clinicians gauge reliability of detected anomalies and classifications, red
 
 ---
 
-### ⚙️ Key Parameters
+## ⚙️ Key Parameters
 
 | Parameter          | Type    | Description                                             | Default    |
 |--------------------|---------|---------------------------------------------------------|------------|
@@ -32,13 +30,15 @@ Help clinicians gauge reliability of detected anomalies and classifications, red
 | `method`           | string  | Estimation technique: `bayesian`, `ensemble`, `dropout` | `bayesian` |
 
 :::tip  
-Choosing a higher confidence level increases caution but may reduce coverage.  
-Experiment with different methods for best fit in your clinical setting.  
+
+- Choosing a higher confidence level increases caution but may reduce coverage.  
+- Experiment with different methods for best fit in your clinical setting.  
+
 :::
 
 ---
 
-### 📦 Output Format
+## 📦 Output Format
 
 Example:
 
@@ -52,7 +52,7 @@ Example:
 
 ---
 
-### 🛠️ Usage Example
+## 🛠️ Usage Example
 
 ```bash
 curl -X POST "https://api.neolens.ai/v1/uncertainty-estimation" \
@@ -63,7 +63,7 @@ curl -X POST "https://api.neolens.ai/v1/uncertainty-estimation" \
 
 ---
 
-### ⚠️ Limitations
+## ⚠️ Limitations
 
 - Uncertainty estimates depend on model calibration.
 - Interpretation requires clinical context.
