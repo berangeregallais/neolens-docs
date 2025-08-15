@@ -12,9 +12,6 @@ const config = {
 
   url: 'https://berangeregallais.github.io',
   baseUrl: '/',
-  organizationName: 'berangeregallais',
-  projectName: 'neolens-docs',
-  deploymentBranch: 'master',
   trailingSlash: true,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',
@@ -39,12 +36,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/', // docs à la racine
+          routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/berangeregallais/neolens-docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

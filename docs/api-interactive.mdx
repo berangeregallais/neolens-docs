@@ -4,6 +4,16 @@ title: Interactive API Explorer
 description: 'Try the Neolens API interactively: test endpoints, upload medical images, and get real-time AI analysis with code samples and tutorials.'
 ---
 
+import CodeSnippetGenerator from '@site/src/components/CodeSnippetGenerator';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import InteractiveApiTester from '@site/src/components/InteractiveApiTester';
+import ResponseExplorer from '@site/src/components/ResponseExplorer';
+import BatchProcessorDemo from '@site/src/components/BatchProcessorDemo';
+import AdvancedConfigPanel from '@site/src/components/AdvancedConfigPanel';
+import RequestValidator from '@site/src/components/RequestValidator';
+import MockResponseGenerator from '@site/src/components/MockResponseGenerator';
+
 > Experience the Neolens API hands-on with our interactive documentation. Test endpoints, upload images, and see real AI analysis results without writing code.
 
 ---
@@ -32,49 +42,7 @@ neolens_live_abcd1234efgh5678ijkl9012
 
 *Note: This is a documentation mockup. In a real implementation, this would be a functional API testing interface.*
 
-```yaml
-# Interactive Form Simulation
-endpoint: POST /v1/analyze
-authentication: Bearer [Your API Key]
-content_type: multipart/form-data
-
-# File Upload Section
-image_file: Choose File # Upload DICOM, PNG, or JPG
-confidence_threshold: 0.75 # Slider: 0.1 - 1.0
-modality: "auto-detect" # Dropdown: auto, CT, MRI, X-ray
-
-# Advanced Options (Collapsible)
-model_version: "v3.2.1" # Dropdown
-verbosity: "standard" # minimal, standard, verbose
-region_of_interest: "auto" # auto, thorax, abdomen, brain
-
-Send Request | Clear | Copy as cURL
-```
-
-**Expected Response Preview:**
-
-```json
-{
-  "status": "success",
-  "timestamp": "2025-08-05T14:30:22Z",
-  "processing_time": "8.3s",
-  "data": {
-    "patient_id": "demo_patient_001",
-    "findings": [
-      {
-        "label": "pulmonary_nodule",
-        "confidence": 0.87,
-        "location": {
-          "x": 245, "y": 156,
-          "width": 32, "height": 28
-        },
-        "clinical_significance": "moderate"
-      }
-    ],
-    "recommendation": "Consider follow-up CT in 3 months"
-  }
-}
-```
+<InteractiveApiTester simulate={true} endpoint="https://api.neolens.ai/v1/analyze" />
 
 ---
 
@@ -82,36 +50,121 @@ Send Request | Clear | Copy as cURL
 
 ### Live Code Examples
 
-Each endpoint includes runnable examples in multiple languages:
+Each endpoint includes runnable examples in multiple languages.
+Use the interactive generator below to produce ready‑to‑run code for uploading an image to the Neolens API with your parameters:
 
-#### Language Code Generator
+> Tip: Replace `YOUR_API_KEY` with a valid key and pick your preferred language.
 
-Select your preferred language and see automatically generated code:
+Fallback (static tabs)
 
-**Language:** `Python` `JavaScript` `cURL` `PHP` `Ruby`
+If JavaScript is disabled, use one of these copy‑paste examples:
 
+<Tabs values={[
+{label: 'Python', value: 'python'},
+{label: 'JavaScript', value: 'js'},
+{label: 'cURL', value: 'curl'},
+{label: 'PHP', value: 'php'},
+{label: 'Ruby', value: 'ruby'}
+]}>
+
+<TabItem value="python">
 ```python
-# Auto-generated Python example
+# Python example
 import requests
 
 url = "https://api.neolens.ai/v1/analyze"
-headers = {
-    "Authorization": "Bearer YOUR_API_KEY"
-}
-files = {
-    "image": open("chest_xray.jpg", "rb")
-}
-data = {
-    "confidence_threshold": 0.75,
-    "modality": "auto-detect"
-}
+headers = {"Authorization": "Bearer YOUR_API_KEY"}
+files = {"image": open("chest_xray.jpg", "rb")}
+data = {"confidence_threshold": 0.75, "modality": "auto-detect"}
 
-response = requests.post(url, headers=headers, files=files, data=data)
-result = response.json()
+resp = requests.post(url, headers=headers, files=files, data=data)
+resp.raise_for_status()
+result = resp.json()
 print(f"Analysis complete: {result['data']['findings']}")
 ```
 
-**Actions:** Copy Code | Run in Notebook | Modify Parameters
+</TabItem> <TabItem value="js">
+```javascript
+// Node.js example
+import fs from "node:fs";
+import fetch from "node-fetch";
+import FormData from "form-data";
+
+const url = "https://api.neolens.ai/v1/analyze";
+const form = new FormData();
+form.append("image", fs.createReadStream("chest_xray.jpg"));
+form.append("confidence_threshold", "0.75");
+form.append("modality", "auto-detect");
+
+const resp = await fetch(url, {
+  method: "POST",
+  headers: { Authorization: "Bearer YOUR_API_KEY" },
+  body: form
+});
+if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+const result = await resp.json();
+console.log("Findings:", result.data.findings);
+```
+
+</TabItem> <TabItem value="curl">
+```bash
+# cURL example
+curl -X POST "https://api.neolens.ai/v1/analyze" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -F "image=@chest_xray.jpg" \
+  -F "confidence_threshold=0.75" \
+  -F "modality=auto-detect"
+```
+
+</TabItem> <TabItem value="php">
+```php
+<?php
+// PHP example (requires ext-curl)
+$ch = curl_init("https://api.neolens.ai/v1/analyze");
+$post = [
+  "image" => new CURLFile("chest_xray.jpg"),
+  "confidence_threshold" => "0.75",
+  "modality" => "auto-detect"
+];
+curl_setopt_array($ch, [
+  CURLOPT_POST => true,
+  CURLOPT_POSTFIELDS => $post,
+  CURLOPT_HTTPHEADER => ["Authorization: Bearer YOUR_API_KEY"],
+  CURLOPT_RETURNTRANSFER => true
+]);
+$resp = curl_exec($ch);
+if ($resp === false) { throw new Exception(curl_error($ch)); }
+curl_close($ch);
+$result = json_decode($resp, true);
+print_r($result["data"]["findings"]);
+```
+
+</TabItem> <TabItem value="ruby">
+```ruby
+# Ruby example
+require "net/http"
+require "uri"
+require "json"
+
+uri = URI.parse("https://api.neolens.ai/v1/analyze")
+request = Net::HTTP::Post.new(uri)
+request["Authorization"] = "Bearer YOUR_API_KEY"
+
+form_data = [
+  ["image", File.open("chest_xray.jpg")],
+  ["confidence_threshold", "0.75"],
+  ["modality", "auto-detect"]
+]
+request.set_form form_data, "multipart/form-data"
+
+res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) do |http|
+  http.request(request)
+end
+result = JSON.parse(res.body)
+puts result.dig("data", "findings")
+```
+
+</TabItem> </Tabs>
 
 ### Response Visualization
 
@@ -119,23 +172,15 @@ Interactive response viewer with syntax highlighting and expandable sections:
 
 #### Response Explorer
 
-```json
-{
-  "status": "success", // ✅ Request successful
-  "processing_time": "8.3s", // ℹ️ Within normal range (< 15s)
-  "data": {
-    "findings": [ // 📍 2 findings detected
-      {
-        "label": "pulmonary_nodule", // 🔍 Click to learn more
-        "confidence": 0.87, // 🎯 High confidence
-        "bounding_box": [245, 156, 32, 28] // 📐 Pixel coordinates
-      }
+<ResponseExplorer json={{
+  status: "success",
+  processing_time: "8.3s",
+  data: {
+    findings: [
+      { label: "pulmonary_nodule", confidence: 0.87, bounding_box: [245,156,32,28] }
     ]
   }
-}
-```
-
-**Actions:** [Expand All] [Collapse] [Download JSON] [Share Response]
+}} />
 
 ---
 
@@ -178,25 +223,7 @@ Interactive response viewer with syntax highlighting and expandable sections:
 
 **Estimated time:** 10 minutes
 
-#### Batch Upload Interface (Mockup)
-
-```yaml
-# Multi-file selector
-files: 
-  - chest_01.dcm ✅ Valid DICOM
-  - chest_02.jpg ✅ Valid image  
-  - brain_mri.dcm ✅ Valid DICOM
-  - invalid.txt ❌ Unsupported format
-
-batch_settings:
-  process_parallel: true
-  max_concurrent: 3
-  notify_on_complete: true
-  
-progress: [████████░░] 80% complete (12/15 images)
-
-[Process Batch] [Cancel] [Download Results]
-```
+<BatchProcessorDemo maxConcurrent={3} />
 
 ### Tutorial 3: Advanced Configuration
 
@@ -204,27 +231,7 @@ progress: [████████░░] 80% complete (12/15 images)
 
 **Estimated time:** 15 minutes
 
-#### Advanced Configuration Panel
-
-```yaml
-ai_configuration:
-  sensitivity: 0.8 # Higher = more findings detected
-  model_version: "v3.2.1" # Latest stable
-  analysis_depth: "deep" # shallow, standard, deep
-  
-region_of_interest:
-  enabled: true
-  auto_detect: false
-  custom_roi: [100, 50, 400, 300] # x, y, width, height
-  
-output_options:
-  include_heatmap: true
-  include_measurements: true
-  uncertainty_estimation: true
-  generate_report: false
-```
-
-**Actions:** [Apply Settings] [Reset to Defaults] [Save as Profile]
+<AdvancedConfigPanel />
 
 ---
 
@@ -232,47 +239,23 @@ output_options:
 
 ### API Schema Validator
 
-#### Request Validator
+#### Request Validator (Live)
 
-Paste your JSON request to validate against the API schema:
-
-```json
-{
-  "image_data": "base64_encoded_string...",
-  "confidence_threshold": 0.75,
-  "modality": "CT"
-}
-```
-
-**Validation Results:**
-
-- ✅ Schema valid
-- ✅ Required fields present  
-- ⚠️ Warning: Large image size may increase processing time
-- ✅ Authentication format correct
-
-**Actions:** [Validate] [Fix Issues] [View Schema]
+<RequestValidator
+  initialJson={{
+    "image_data": "base64_encoded_string...",
+    "confidence_threshold": 0.75,
+    "modality": "CT"
+  }}
+/>
 
 ### Response Mock Generator
 
-#### Mock Response Generator
+#### Mock Response Generator (Live)
 
-Generate realistic API responses for testing:
-
-**Scenario:** `High Confidence Finding` `Multiple Findings` `No Findings` `Error Response`
-
-**Customization:**
-
-- Confidence Range: `0.7 - 0.9`
-- Number of Findings: `1-3`
-- Modality: `CT Chest`
-- Processing Time: `5-12s`
-
-**Actions:** [Generate Mock] [Copy JSON] [Use in Tests]
+<MockResponseGenerator />
 
 ### Code Snippet Generator
-
-import CodeSnippetGenerator from '@site/src/components/CodeSnippetGenerator';
 
 <CodeSnippetGenerator />
 

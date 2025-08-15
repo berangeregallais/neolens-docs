@@ -44,12 +44,12 @@ Once logged in, navigate to **Settings > API Keys** and create a key with approp
 
 ### 3. Choose your integration path
 
-| Use Case                    | Recommended Tool              | Documentation                                |
-|-----------------------------|-------------------------------|----------------------------------------------|
-| Backend devs (Node, Python) | REST API / SDK                | [API Reference](/api-reference/endpoints/)   |
-| No-code / Quick tests       | Web UI                        | [Try Interactive API](/api-interactive/)     |
-| Research / Jupyter users    | Python SDK (in progress)      | Coming soon                                  |
-| Bulk upload / automation    | REST API + CLI (soon)         | [Quickstart](/getting-started/quickstart)    |
+| Use Case                    | Recommended Tool              | Documentation                                        |
+|-----------------------------|-------------------------------|------------------------------------------------------|
+| Backend devs (Node, Python) | REST API / SDK                | [API Reference](/api-reference/endpoints/)           |
+| No-code / Quick tests       | Web UI                        | [Try Interactive API](/api-interactive)              |
+| Research / Jupyter users    | Python SDK (in progress)      | Coming soon                                          |
+| Bulk upload / automation    | REST API + CLI (soon)         | [Quickstart](/getting-started/quickstart)            |
 
 ---
 
